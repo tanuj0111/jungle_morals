@@ -1,3 +1,134 @@
+@media (max-width: 1024px) {
+  .navbarContainer {
+    height: 180px;
+    padding-right: 2rem;
+  }
+  .sun {
+    height: 500px;
+    width: 500px;
+    top: -200px;
+    margin-left: -200px;
+  }
+  .sunLight {
+    height: 700px;
+    width: 700px;
+    top: -300px;
+    margin-left: -300px;
+  }
+  .jungleMorals {
+    height: 80px;
+    width: 80px;
+    top: 5px;
+    margin-left: 0px;
+    margin-top: -10px;
+  }
+  .homeCloud {
+    width: 120px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 60px;
+  }
+  .homeCloudText {
+    font-size: 1.2rem;
+    margin-top: -1rem;
+  }
+  .theWhyCloud {
+    width: 120px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 180px;
+  }
+  .theWhyCloudText {
+    font-size: 1rem;
+    margin-top: -1rem;
+  }
+  .whatCloud {
+    width: 120px;
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+  .whatCloudText {
+    font-size: 1rem;
+    margin-top: -2rem;
+  }
+  .charactersCloud {
+    width: 120px;
+    height: 80px;
+    margin-left: 80px;
+    margin-top: 60px;
+  }
+  .charactersCloudText {
+    font-size: 1rem;
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbarContainer {
+    height: 120px;
+    padding-right: 0.5rem;
+  }
+  .sun {
+    height: 200px;
+    width: 200px;
+    top: -80px;
+    margin-left: -60px;
+  }
+  .sunLight {
+    height: 300px;
+    width: 300px;
+    top: -120px;
+    margin-left: -100px;
+  }
+  .jungleMorals {
+    height: 40px;
+    width: 40px;
+    top: 2px;
+    margin-left: 0px;
+    margin-top: -5px;
+  }
+  .homeCloud {
+    width: 60px;
+    height: 40px;
+    margin-top: 2px;
+    margin-left: 20px;
+  }
+  .homeCloudText {
+    font-size: 0.7rem;
+    margin-top: -0.5rem;
+  }
+  .theWhyCloud {
+    width: 60px;
+    height: 40px;
+    margin-top: 2px;
+    margin-left: 60px;
+  }
+  .theWhyCloudText {
+    font-size: 0.7rem;
+    margin-top: -0.5rem;
+  }
+  .whatCloud {
+    width: 60px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+  .whatCloudText {
+    font-size: 0.7rem;
+    margin-top: -1rem;
+  }
+  .charactersCloud {
+    width: 60px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .charactersCloudText {
+    font-size: 0.7rem;
+    margin-top: -1rem;
+  }
+}
 .navbarContainer {
   position: relative;
   height: 300px;
@@ -8,107 +139,115 @@
 }
 
 .sun {
-  height: 2000px;
-  width: 2000px;
-  top: -851px;
-  margin-left: -874px;
+  height: 1000px;
+  width: 1000px;
+  top: -430px;
+  margin-left: -425px;
   position: absolute;
   object-fit: contain;
 }
 
 .sunLight {
   height: 1500px;
-  width: 1500px;
-  top: -500px;
+  width: 1400px;
+  top: -650px;
   position: absolute;
-  margin-left: -450px;
+  margin-left: -550px;
 }
 
 .jungleMorals {
-  height: 300px;
-  width: 300px;
-  top: -5px;
+  height: 150px;
+  width: 150px;
+  top: 10px;
   position: absolute;
   margin-left: 5px;
+  margin-top: -30px;
+  object-fit: contain;
 }
 
 .homeCloudOuter {
-  margin-left: -1000px;
-  margin-top: 8px;
+  margin-left: -630px;
+  margin-top: 6px;
 }
 
 .homeCloud {
-  width: 400px;
-  height: 400px;
-  margin-top: 20px;
+  width: 250px;
+  height: 200px;
+  margin-top:10px;
+  margin-left: 220px;
   z-index: 3;
 }
 
 .homeCloudText {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
-  margin-top: -8rem;
+  margin-top: -2rem;
   color: rgb(44, 238, 40)
 }
 
 .theWhyCloudOuter {
-  margin-left: -380px;
-  margin-top: 20px;
+   margin-left: -600px;
+  margin-top: 5px;
 }
 
 .theWhyCloud {
-  width: 400px;
-  height: 400px;
+   width: 250px;
+  height: 200px;
+  margin-top:20px;
+  margin-left: 650px;
+  /* z-index: 3; */
 }
 
 .theWhyCloudText {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-top: -8rem;
+  margin-top: -3rem;
 }
 
 .whatCloudOuter {
-  margin-left: -480px;
-  margin-top: 100px;
+  width: 250px;
+  height: 200px;
+  margin-top:-35px;
+  margin-left: -150px;
 }
 
 .whatCloud {
-  width: 450px;
-  height: 400px;
-  margin-left: -230px;
-  margin-top: 100px;
+  width: 300px;
+  height: 250px;
+  margin-left: -60px;
+  margin-top: 120px;
   z-index: 2;
 }
 
 .whatCloudText {
-  font-size: 3rem;
+  font-size:2rem;
+  font-weight: bold;
+  margin-top: -4rem;
+}
+
+.charactersCloudOuter {
+  margin-left: -60px;
+  margin-top: -40px;
+}
+
+.charactersCloud {
+  width: 300px;
+  height: 300px;
+  margin-left: 270px;
+  margin-top: 160px;
+}
+
+.charactersCloudText {
+  font-size: 2rem;
   font-weight: bold;
   margin-top: -8rem;
 }
 
-.charactersCloudOuter {
-  margin-left: -250px;
-  margin-top: 40px;
-}
-
-.charactersCloud {
-  width: 500px;
-  height: 500px;
-  margin-left: 125px;
-  margin-top: 150px;
-}
-
-.charactersCloudText {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-top: -12rem;
-}
-
 .emptyCloud {
-  width: 350px;
-  height: 350px;
-  margin-left: 290px;
-  margin-top: -50px;
+  width: 230px;
+  height: 200px;
+  margin-left: 400px;
+  margin-top: -20px;
 }
 
 .cloudWrapper {
@@ -152,434 +291,4 @@
   margin-left: 310px;
   margin-top: 10px;
   z-index: 2;
-}
-
-@media(max-width:2390px) {
-  .theWhyCloudOuter {
-    margin-left: -198px;
-  }
-
-  .charactersCloud {
-    margin-left: 272px;
-    margin-top: 162px;
-  }
-
-  .whatCloud {
-    margin-left: -46px;
-    margin-top: 134px;
-  }
-
-  .homeCloud {
-    margin-top: 20px;
-    margin-left: 238px;
-  }
-}
-
-@media(max-width:2200px) and (min-width:2000px) {
-  .sun {
-    height: 1500px;
-    width: 1500px;
-    top: -650px;
-    margin-left: -600px;
-    position: absolute;
-    object-fit: contain;
-  }
-
-  .sunLight {
-    height: 1500px;
-    width: 1500px;
-    top: -600px;
-    position: absolute;
-    margin-left: -450px;
-  }
-
-  .jungleMorals {
-    height: 153px;
-    width: 450px;
-    margin-left: -65px;
-    margin-top: 25px;
-  }
-}
-
-@media(max-width:1440px) and (min-width:1025px) {
-  .sun {
-    height: 1000px;
-    width: 1000px;
-    top: -400px;
-    margin-left: -440px;
-    position: absolute;
-    object-fit: contain;
-  }
-
-  .sunLight {
-    height: 1000px;
-    width: 1000px;
-    top: -350px;
-    position: absolute;
-    margin-left: -350px;
-  }
-
-  .jungleMorals {
-    height: 100px;
-    width: 300px;
-    top: 40px;
-    position: absolute;
-    margin-left: -69px;
-  }
-
-  .homeCloud {
-    width: 250px;
-    height: 200px;
-    margin-top: 8px;
-    margin-left: 722px;
-    z-index: 3;
-  }
-
-  .homeCloudText {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: -3rem;
-    color: rgb(44, 238, 40)
-  }
-
-  .theWhyCloudOuter {
-    margin-left: 31px;
-    margin-top: 24px;
-  }
-
-  .theWhyCloud {
-    width: 250px;
-    height: 200px;
-  }
-
-  .theWhyCloudText {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: -3rem;
-  }
-
-  .whatCloudOuter {
-    margin-left: -128px;
-    margin-top: 40px;
-  }
-
-  .whatCloud {
-    width: 280px;
-    height: 200px;
-  }
-
-  .whatCloudText {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: -1rem;
-  }
-
-  .charactersCloudOuter {
-    margin-left: -100px;
-    margin-top: 50px;
-  }
-
-  .charactersCloud {
-    margin-left: 280px;
-    margin-top: 120px;
-    z-index: 2;
-    width: 300px;
-    height: 300px;
-  }
-
-  .charactersCloudText {
-    font-size: 2.4rem;
-    font-weight: bold;
-    margin-top: -7rem;
-  }
-
-  .emptyCloud {
-    width: 260px;
-    height: 250px;
-    margin-left: 380px;
-    margin-top: -34px;
-  }
-
-  .emptyCloudOuter {}
-}
-
-@media (min-width:769px) and (max-width:1024px) {
-  .sun {
-    height: 1000px;
-    width: 1000px;
-    top: -400px;
-    margin-left: -438px;
-  }
-
-  .sunLight {
-    height: 1000px;
-    width: 1000px;
-    top: -366px;
-    margin-left: -329px;
-  }
-
-  .theWhyCloudOuter {
-    margin-left: -60px;
-    margin-top: 20px;
-  }
-
-  .jungleMorals {
-    height: 150px;
-    width: 150px;
-    top: 13px;
-  }
-
-  .homeCloud {
-    width: 250px;
-    height: 250px;
-  }
-
-  .homeCloudOuter {
-    margin-left: -68px;
-    margin-top: -12px;
-  }
-
-  .homeCloudText {
-    font-size: 34px;
-    margin-top: -6rem;
-  }
-
-  .theWhyCloud {
-    width: 250px;
-    height: 250px;
-  }
-
-  .theWhyCloudOuter {
-    margin-left: 224px;
-    margin-top: 10px;
-  }
-
-  .theWhyCloudText {
-    font-size: 34px;
-    margin-top: -6rem;
-  }
-
-  .charactersCloud {
-    width: 250px;
-    height: 250px;
-    margin-left: 618px;
-    margin-top: 104px;
-  }
-
-  .charactersCloudText {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: -6rem;
-  }
-
-  .whatCloudOuter {
-    margin-left: 7px;
-    margin-top: 50px;
-  }
-
-  .whatCloud {
-    width: 270px;
-    height: 200px;
-    margin-left: 40px;
-  }
-
-  .whatCloudText {
-    font-size: 32px;
-    margin-top: -2rem;
-  }
-
-  .emptyCloud {
-    width: 180px;
-    height: 200px;
-    margin-left: 468px;
-    margin-top: -32px;
-  }
-}
-
-@media(min-width:425px) and (max-width:768px) {
-  .sun {
-    height: 1000px;
-    width: 1000px;
-    top: -400px;
-    margin-left: -450px;
-  }
-
-  .sunLight {
-    height: 1000px;
-    width: 1000px;
-    top: -376px;
-    margin-left: -364px;
-  }
-
-  .homeCloud {
-    width: 200px;
-    height: 200px;
-  }
-
-  .homeCloudOuter {
-    margin-left: 106px;
-    margin-top: -16px;
-  }
-
-  .homeCloudText {
-    font-size: 28px;
-    margin-top: -60px;
-  }
-
-  .theWhyCloudOuter {
-    margin-left: 305px;
-    margin-top: 28px;
-  }
-
-  .theWhyCloud {
-    width: 200px;
-    height: 200px;
-  }
-
-  .theWhyCloudText {
-    font-size: 28px;
-    margin-top: -5rem;
-  }
-
-  .jungleMorals {
-    height: 150px;
-    width: 120px;
-    top: 16px;
-    margin-left: 8px;
-  }
-
-  .whatCloudOuter {
-    margin-left: 80px;
-    margin-top: 0px;
-  }
-
-  .whatCloud {
-    width: 200px;
-    height: 200px;
-    margin-left: 104px;
-    margin-top: 122px;
-  }
-
-  .whatCloudText {
-    font-size: 28px;
-    margin-top: -4rem;
-  }
-
-  .charactersCloudOuter {
-    margin-left: 40px;
-    margin-top: -28px;
-  }
-
-  .charactersCloud {
-    width: 240px;
-    height: 200px;
-    margin-left: 369px;
-    margin-top: 150px;
-  }
-
-  .charactersCloudText {
-    font-size: 28px;
-    margin-top: -58px;
-  }
-
-  .emptyCloud {
-    width: 150px;
-    height: 150px;
-    margin-left: 490px;
-    margin-top: -27px;
-  }
-}
-
-@media(min-width:376px) and (max-width:425px) {
-  .sun {
-    height: 500px;
-    width: 500px;
-    top: -200px;
-    margin-left: -226px;
-  }
-
-  .jungleMorals {
-    height: 54px;
-    width: 54px;
-    top: 16px;
-    margin-left: 5px;
-  }
-
-  .sunLight {
-    height: 500px;
-    width: 500px;
-    top: -182px;
-    margin-left: -176px;
-  }
-
-  .homeCloudOuter {
-    margin-left: 124px;
-    margin-top: 8px;
-  }
-
-  .homeCloud {
-    width: 100px;
-    height: 100px;
-  }
-
-  .homeCloudText {
-    font-size: 18px;
-    margin-top: -38px;
-  }
-
-  .theWhyCloudOuter {
-    margin-left: 190px;
-    margin-top: -16px;
-  }
-
-  .theWhyCloud {
-    width: 100px;
-    height: 100px;
-  }
-
-  .theWhyCloudOuter {
-    margin-left: 228px;
-    margin-top: 27px;
-  }
-
-  .theWhyCloudText {
-    font-size: 18px;
-    margin-top: -2rem;
-  }
-
-  .whatCloudOuter {
-    margin-left: 26px;
-    margin-top: -30px;
-  }
-
-  .whatCloud {
-    width: 120px;
-    height: 100px;
-    margin-left: 135px;
-    margin-top: 124px;
-  }
-
-  .whatCloudText {
-    font-size: 14px;
-    margin-top: -1rem;
-  }
-
-  .charactersCloud {
-    width: 120px;
-    height: 100px;
-    margin-left: 250px;
-    margin-top: 112px;
-  }
-
-  .charactersCloudText {
-    font-size: 18px;
-    margin-top: -26px;
-  }
-
-  .emptyCloud {
-    width: 85px;
-    height: 70px;
-    margin-left: 336px;
-    margin-top: 14px;
-  }
 }

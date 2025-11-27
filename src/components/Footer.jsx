@@ -1,4 +1,4 @@
-import bottom from "../assets/SVG/bottom.svg";
+import bottom from "../assets/webp/footer2.webp";
 import styles from "./Footer.module.css";
 
 function Footer() {
@@ -14,6 +14,7 @@ function Footer() {
                 <button>Blogs</button>
                 <button>Stories</button>
                 <button>Newsletters</button>
+                <button>Explore more</button>
             </div>
         </div>
 
