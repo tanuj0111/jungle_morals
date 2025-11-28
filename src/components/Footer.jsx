@@ -6,7 +6,7 @@ function Footer() {
 
         <div className={styles.footerMain}>
             <div className={styles.footerBgWrapper}>
-                <img src={bottom} className={styles.footerBg} />
+                <img src={bottom} alt="footerimg" className={styles.footerBg} />
             </div>
             <div className={styles.footerLinks}>
                 <button>Home</button>

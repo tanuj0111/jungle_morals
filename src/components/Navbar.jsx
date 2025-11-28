@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import Sun from "../assets/webp/sunlight.webp";
 import junglemorals from "../assets/webp/Asset.webp";
-
 import Sunlight from "../assets/webp/rays.webp";
 import cloud1 from "../assets/webp/cloud1.webp";
 import cloud2 from "../assets/webp/cloud2.webp";
@@ -33,7 +32,7 @@ function Navbar() {
               backgroundImage:
                 "repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.3) 35px, rgba(255,255,255,0.3) 70px)",
             }}
-          ></div> 
+          ></div>
         </div>
         <div
           className="position-absolute top-0 start-0"
@@ -80,7 +79,7 @@ function Navbar() {
               <div className={`position-relative ${styles.theWhyCloud}`}>
                 <img src={cloud2} alt="cloud" className="position-absolute w-100 h-120 object-fit-contain" />
                 <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                  <span className={`${styles.theWhyCloudText}`} style={{ color: "#0f766e"}}>
+                  <span className={`${styles.theWhyCloudText}`} style={{ color: "#0f766e" }}>
                     The Why
                   </span>
                 </div>
@@ -91,7 +90,7 @@ function Navbar() {
               <div className={`position-relative ${styles.whatCloud}`}>
                 <img src={cloud1} alt="cloud" className="position-absolute w-100 h-110 object-fit-contain" />
                 <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                  <span className={`${styles.whatCloudText}`} style={{ color: "#0f766e"}}>
+                  <span className={`${styles.whatCloudText}`} style={{ color: "#0f766e" }}>
                     What We Do
                   </span>
                 </div>
@@ -102,7 +101,7 @@ function Navbar() {
               <div className={`position-relative ${styles.charactersCloud}`}>
                 <img src={cloud3} alt="cloud" className="position-absolute w-100 h-110 object-fit-contain" />
                 <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                  <span className={`${styles.charactersCloudText}`} style={{ color: "#0f766e"}}>
+                  <span className={`${styles.charactersCloudText}`} style={{ color: "#0f766e" }}>
                     Characters
                   </span>
                 </div>

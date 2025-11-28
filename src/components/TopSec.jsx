@@ -34,7 +34,7 @@ export default function TopSec() {
 
         <div className={styles.treeLinks}>
           <a href="/jingles" className={styles.jingles}>Jingles</a>
-          <a href="/interactives" style={{fontSize:'2rem'}} className={styles.interactive}>Interactives</a>
+          <a href="/interactives" style={{ fontSize: '2rem' }} className={styles.interactive}>Interactives</a>
           <a href="/stories" className={styles.stories}>Stories</a>
         </div>
         <img src={treebottomgrass} alt="treebottomgrass" className={styles.treebottomgrass} />
@@ -69,7 +69,7 @@ export default function TopSec() {
 
               <svg width="100%" height="250" viewBox="0 0 1000 300">
                 <defs>
-                  <path id="curve1" d="M 50 350 Q 500 -100 950 350"/>
+                  <path id="curve1" d="M 50 350 Q 500 -100 950 350" />
                 </defs>
                 <text className={styles.para1SVG}>
                   <textPath href="#curve1" startOffset="50%" textAnchor="middle">
@@ -108,10 +108,10 @@ export default function TopSec() {
       </div>
       <div className={styles.aboutUsSection}>
         <div className={styles.aboutUsImageWrapper}>
-          <img src={aboutUs} className={styles.aboutUsImage} />
+          <img src={aboutUs} alt="aboutusimage" className={styles.aboutUsImage} />
 
           <div className={styles.aboutUsContent}>
-            <h2 style={{fontSize: '3rem'}}>About Us</h2>
+            <h2 style={{ fontSize: '3rem' }}>About Us</h2>
 
             <p className={styles.aboutText}>
               {expanded ? fullText : shortText}
