@@ -18,7 +18,7 @@ body {
   background-size: cover;
   /* background-repeat: no-repeat; */
   /* background-position: bottom center; */
-  top: 421px !important;
+  top: 449px !important;
   height:auto;
   min-height: 290vh;
   position: relative;
@@ -37,10 +37,11 @@ body {
 
 .treebottomgrass {
   position: absolute;
-  left: -8px;
-  width: 130%;
-  margin-top:290px;
-  z-index: 3;
+  left: -9px;
+  width: 140%;
+  /* height: auto; */
+  margin-top:380px;
+  z-index: 10;
 }
 
 /* .tree {
@@ -56,9 +57,9 @@ body {
 }
 
 .tree {
-  width: 80%;
+  width: 90%;
   position: absolute;
-  top: -139px;
+  top: -130px;
   margin-left: 140px;
   z-index: 11;
 }
@@ -74,7 +75,7 @@ body {
 
 .treeLinks a {
   position: absolute;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #065d11;
   text-decoration: none;
@@ -84,23 +85,23 @@ body {
 
 .jingles {
   position: relative;
-  margin-top:110px;
+  margin-top:150px;
   margin-left: 180px;
   z-index: 20;
 }
 
 .interactive {
   position: relative; 
-  margin-top: 92px;
-  margin-left: 389px;
+  margin-top: 140px;
+  margin-left: 440px;
   z-index: 20;
 }
 
 
 .stories {
   position: relative;
-  margin-top: 250px;
-  margin-left: 400px;
+  margin-top: 300px;
+  margin-left: 430px;
   z-index: 20;
 }
 
@@ -111,17 +112,17 @@ body {
 
 .mountain {
   position: absolute;
-  top: -350px;
-  width: 80%;
+  top: -340px;
+  width: 90%;
   height: 900px;
-  left:335px;
+  left:200px;
   z-index: 2;
 }
 
 .boardContainer {
   position: absolute;
-  top: 10px;
-  left: 8%;
+  top: 22px;
+  left: 7%;
   transform: translate(-50%, -50%);
   z-index: 6;
 }
@@ -156,8 +157,8 @@ body {
 .river {
   position: absolute;
   width: 90%;
-  top:41px;
-  left: -550px;
+  top:65px;
+  left:-650px;
   z-index: 2;
 }
 
@@ -165,7 +166,7 @@ body {
 .flowerCaveSection {
   position: absolute;
   margin-top: -5%;
-  left: 9%;
+  left: 4%;
   width: 100%;
   height: auto;
   display: flex;
@@ -174,25 +175,41 @@ body {
 }
 
 .flowers {
+  height: 190px;
+  /* width: 30px; */
   position: relative;
   z-index: 4;
-  margin-top: 150px;
-  margin-left: -10px;
-  width: 75%;
+  margin-top: 110px;
+  margin-left: 650px;
+  width:50%;
 
+}
+.patchleft {
+  position: absolute;
+  width: 33%;
+  left: 780px;
+  top: 360px;
+  z-index: 5;
+}
+.patchright {
+  position: absolute;
+  width: 33%;
+  left: 7px;
+  top: 350px;
+  z-index: 5;
 }
 
 .caveContainer {
   position: absolute;
-  margin-top: 11%;
-  margin-left: -12%;
+  margin-top: 13%;
+  margin-left: -27%;
   width: 55%;
   text-align: center;
   z-index: 10;
 }
 
 .cave {
-  width: 100%;
+  width: 120%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -203,9 +220,9 @@ body {
 .caveText {
   position: absolute;
   top: 38%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 100%;
   text-align: center;
   color: #004b23;
 }
@@ -213,9 +230,9 @@ body {
 .caveText2 {
   position: absolute;
   top: 52%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 90%;
   text-align: center;
   color: #004b23;
 }
@@ -253,16 +270,16 @@ body {
 .wood {
   width: 72%;
   position: relative;
-  margin-bottom: -600px;
-  left: 120px;
+  margin-bottom: -800px;
+  left: 50px;
   z-index: 1;
 }
 
 .tiger {
   width: 50%;
   position:  relative;
-  margin-bottom: -890px  ;
-  left: 33%;
+  margin-bottom: -990px  ;
+  left: 20%;
   z-index: 2;
 
 }
@@ -270,9 +287,9 @@ body {
 .tigerPaw {
   position: absolute;
   width: 30px;
-  padding-top: 600px;
+  padding-top: 650px;
   margin-bottom: 300px;
-  margin-left: 180px;
+  margin-left: 110px;
   z-index: 3;
 }
 
@@ -284,32 +301,32 @@ body {
 .table {
   width: 75%;
   position: relative;
-  bottom: -320px;
-  right: -270px;
+  bottom: -460px;
+  right: -300px;
   z-index: 1;
 }
 
 .elphe {
   width: 65%;
   position: absolute;
-  bottom: -570px;
-  right: -5%;
+  bottom: -680px;
+  right: -1%;
   z-index: 2;
 }
 
 .elphepaw {
   position: relative;
   width: 35px;
-  margin-bottom: -990px;
-  margin-left: -33%;
+  margin-bottom: -1200px;
+  margin-left: -37%;
   z-index: 3;
 }
 
 .boatWrapper {
   position: absolute;
-  width: 69%;
+  width: 70%;
   top: 180px;
-  margin-left:10%;
+  margin-left:3%;
   transform: translateX(-50%);
   z-index: 90;
 }
@@ -321,14 +338,14 @@ body {
 
 .boatBtn {
   position: absolute;
-  top: 61%;
-  left: 80%;
+  top: 61.5%;
+  left: 80.7%;
   transform: translate(-50%, -50%);
   background: inherit;
   color: green;
   border: none;
   padding: 15px 30px;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: bold;
   border-radius: 12px;
   cursor: pointer;
@@ -337,8 +354,8 @@ body {
 
 .aboutUsSection {
   position: absolute;
-  margin-top: -38%;
-  margin-right: -9px;
+  margin-top: -35%;
+  margin-right:10px;
   z-index: 10;
 }
 

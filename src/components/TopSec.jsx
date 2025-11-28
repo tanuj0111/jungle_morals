@@ -14,6 +14,8 @@ import flowers from "../assets/webp/flower.webp"
 import board from "../assets/webp/board.webp"
 import cave from "../assets/webp/cave1.webp"
 import aboutUs from "../assets/webp/aboutUs.webp";
+import patchright from "../assets/webp/patch_right.webp";
+import patchleft from "../assets/webp/patch_left.webp";
 
 import styles from "./TopSec.module.css";
 export default function TopSec() {
@@ -61,7 +63,9 @@ export default function TopSec() {
           </div>
         </div>
         <div className={styles.flowerCaveSection}>
-          <img src={flowers} alt="flowers" className={styles.flowers} />
+          <img src={flowers} alt="flower" className={styles.flowers} />
+          <img src={patchleft} alt="patch" className={styles.patchleft} />
+          <img src={patchright} alt="patch" className={styles.patchright} />
 
           <div className={styles.caveContainer}>
             <img src={cave} alt="cave" className={styles.cave} />

@@ -10,11 +10,11 @@ function Footer() {
             </div>
             <div className={styles.footerLinks}>
                 <button>Home</button>
-                <button>Explore More</button>
+                {/* <button>Explore More</button> */}
                 <button>Blogs</button>
                 <button>Stories</button>
                 <button>Newsletters</button>
-                <button>Explore more</button>
+                {/* <button>Explore more</button> */}
             </div>
         </div>
 
