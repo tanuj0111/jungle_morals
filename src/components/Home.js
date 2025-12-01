@@ -5,12 +5,14 @@ import Navbar from "./Navbar";
 
 import Footer from "./Footer";
 import TopSec from "./TopSec";
+import Whatwedo from "./whatwedo";
 function Home() {
   return (
     <div className={styles.homeContainer}>
       <Navbar />
-      <TopSec />
-      <Footer />
+      {/* <TopSec /> */}
+      <Whatwedo/>
+      <Footer/>
     </div>
   );
 }

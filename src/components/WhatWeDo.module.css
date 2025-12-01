@@ -1,0 +1,406 @@
+/*
+  WhatWeDo: fluid, breakpoint-light CSS for easy responsiveness.
+  - CSS variables for quick tuning per component
+  - Grid auto-fit for wrapping cards
+  - clamp() for fluid typography and sizes
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+    height: 100vh;
+}
+
+.wrapper {
+    background-image: url("../assets/What We Do Page Assests/2x/bgsky.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    --banner-w: clamp(280px, 70vw, 980px);
+    --bird-h: clamp(72px, 12vw, 120px);
+    --card-max: 360px;
+    position: relative;
+    width: 100vw;
+    z-index: 1;
+    top: -20vh;
+    margin-inline: auto;
+}
+
+/* Lightweight modal styles */
+.modalRoot {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+}
+
+.modalBackdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+}
+
+.modalBody {
+    position: relative;
+    max-width: min(92vw, 980px);
+    max-height: 86vh;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.modalImg {
+    display: block;
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    object-fit: contain;
+}
+
+.modalClose {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: #1f7a36;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Clickable info icons */
+.infoBtn {
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    z-index: 999; /* ensure above nearby art */
+    pointer-events: auto;
+    user-select: none;
+    display: inline-block;
+}
+.infoBtn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(47,164,62,0.45);
+    border-radius: 6px;
+}
+
+/* Popover (anchored next to icon) */
+.popoverRoot {
+    position: fixed;
+    transform: translateY(-50%);
+    z-index: 1100;
+    pointer-events: none; /* allow clicks to underlying, except card */
+}
+
+.popoverCard {
+    position: relative;
+    pointer-events: auto; /* enable clicks on close */
+    filter: drop-shadow(0 10px 24px rgba(0,0,0,0.35));
+}
+
+.popoverImg {
+    display: block;
+    max-width: min(360px, 42vw);
+    height: auto;
+}
+
+.popoverClose {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: #1f7a36;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+
+.header {
+    display: grid;
+    place-items: center;
+    margin-block-end: clamp(1rem, 2vw, 2rem);
+}
+
+.banner {
+    width: 75vw;
+    height: auto;
+    display: block;
+    position: absolute;
+    /* top: -17rem; */
+    z-index: 6;
+}
+
+.cardsRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--gap);
+    align-items: start;
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+}
+
+.birdWrap {
+    height: var(--bird-h);
+    display: grid;
+    place-items: center;
+    margin-bottom: 20vh;
+}
+
+.bird1 {
+    height: 60vh;
+    position: absolute;
+    top: 8rem;
+    /* right: 1rem; */
+    width: auto;
+    display: block;
+}
+
+.bird2 {
+    height: 60vh;
+    position: absolute;
+    top: 15rem;
+    width: auto;
+    display: block;
+}
+
+.bird3 {
+    height: 60vh;
+    position: absolute;
+    top: 8rem;
+    width: auto;
+    display: block;
+}
+.textSection {
+    background-image: url("../assets/What We Do Page Assests/2x/bggrass.png");
+    background-size: cover;
+    position: relative;
+    top: 40vh;
+    right: 3px;
+    min-height: 340vh;
+     height: 100vh;   
+     width: 100vw;  
+     z-index: 10;
+     /* background-color: bisque; */
+}
+.textcontainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.hipo {
+    height: 90vh;
+    position: absolute;
+    top: 9rem;
+    left: 1rem;
+    width: auto;
+    display: block;
+}
+.cow {
+    height: 80vh;
+    position: absolute;
+    top: 13rem;
+    left: 40rem;
+    width: auto;
+    display: block;
+}
+.elephant {
+    height: 90vh;
+    position: absolute;
+    top: 7rem;
+    right: 2rem;
+    width: auto;
+
+    display: block;
+}
+.oak {
+    height: 100vh;
+    position: absolute;
+    top: 30rem;
+    /* left: 2rem; */
+    width: 100vw;
+    display: block;
+    z-index: -10;
+    right: 1vw;
+}
+.imfo1 {
+    height: 2vh;
+    position: absolute;
+    top: 32rem;
+    left: 15.3rem;
+    width: auto;
+    display: block;
+}
+.imfo2 {
+    height: 2vh;
+    position: absolute;
+    top: 39rem;
+    left: 15.3rem;
+    width: auto;
+    display: block;
+}
+.imfo3 {
+    height: 2vh;
+    position: absolute;
+    top: 35rem;
+    left: 54.3rem;
+    width: auto;
+    display: block;
+}
+.imfo4 {
+    height: 1.7vh;
+    position: absolute;
+    top: 29rem;
+    left: 85.7rem;
+    width: auto;
+    display: block;
+}
+.imfo5 {
+    height: 1.7vh;
+    position: absolute;
+    top: 33.6rem;
+    left: 84.7rem;
+    width: auto;
+    display: block;
+}
+.imfo6 {
+    height: 1.7vh;
+    position: absolute;
+    top: 44.5rem;
+    left: 82.7rem;
+    width: auto;
+    display: block;
+}
+.imfo7 {
+    height: 1.7vh;
+    position: absolute;
+    top: 51.8rem;
+    left: 67.3rem;
+    width: auto;
+    display: block;
+}   
+.imfo8 {
+    height: 1.7vh;
+    position: absolute;
+    top: 59.5rem;
+    left: 68rem;
+    width: auto;
+    display: block;
+}   
+.activity1 {
+    height: 50vh;
+    position: absolute;
+    top: 65.8rem;
+    left: 5rem;
+    width: auto;
+    display: block;
+}
+.activity2 {
+    height: 45vh;
+    position: absolute;
+    top: 74rem;
+    left: 34rem;
+    width: auto;
+    display: block;
+    z-index: -11;
+}
+.activity3 {
+    height: 50vh;
+    position: absolute;
+    top: 65.5rem;
+    left: 66rem;
+    width: auto;
+    display: block;
+}    
+.activity11 {
+    height: 12vh;
+    position: absolute;
+    top: 89rem;
+    left: 9rem;
+    width: auto;
+}
+.activity21 {
+    height: 12vh;
+    position: absolute;
+    top: 95rem;
+    left: 38rem;
+    width: auto;
+    z-index: -11;
+}
+.activity31 {
+    height: 11vh;
+    position: absolute;
+    top: 89rem;
+    left: 67.5rem;
+    width: auto;
+}
+.elephantcrew {
+    height: 60vh;
+    position: absolute;
+    top: 96rem;
+    left: 4rem;
+    width: auto;
+}
+.chess {
+    height: 60vh;
+    position: absolute;
+    top: 103rem;
+    left: 33rem;
+    width: auto;
+    z-index: -11;
+}
+.dogs {
+    height: 60vh;
+    position: absolute;
+    top: 96rem;
+    left: 70rem;
+    width: auto;
+    z-index: -11;
+}
+.infoboard {
+    height: 20vh;
+    position: absolute;
+    top: 130rem;
+    left: 25rem;
+    width: auto;
+    z-index: -11;
+}
+
+
+
+/* Minimal breakpoints: override variables, not structure */
+@media (max-width: 575.98px) {
+    .wrapper {
+        --bird-h: clamp(56px, 18vw, 90px);
+        --banner-w: clamp(240px, 82vw, 640px);
+    }
+}
+
+@media (min-width: 992px) {
+    .cardsRow {
+        grid-template-columns: repeat(3, minmax(260px, 1fr));
+    }
+}

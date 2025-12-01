@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 html,
@@ -23,6 +23,7 @@ body {
   top: 449px !important;
   height:auto;
   min-height: 290vh;
+  position: relative;
   /* margin-left: ; */
   position: relative;
   /* background-color: transparent; */
@@ -543,8 +544,8 @@ body {
 
 .boardContainer {
   position: absolute;
-  top: 22px;
-  left: 7%;
+  top: -2rem;
+  left:10vh;
   transform: translate(-50%, -50%);
   z-index: 6;
 }
