@@ -8,7 +8,7 @@ import TopSec from "./TopSec";
 function Home() {
   return (
     <div className={styles.homeContainer}>
-      <Navbar />
+      {/* <Navbar /> */}
       <TopSec />
       <Footer />
     </div>

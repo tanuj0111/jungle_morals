@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./TopSec.module.css";
 import mountain from "../assets/webp/mountain.webp";
 import tree from "../assets/webp/tree.webp";
 import treebottomgrass from "../assets/webp/treebottomgrass.webp";
@@ -16,8 +17,7 @@ import cave from "../assets/webp/cave1.webp"
 import aboutUs from "../assets/webp/aboutUs.webp";
 import patchright from "../assets/webp/patch_right.webp";
 import patchleft from "../assets/webp/patch_left.webp";
-
-import styles from "./TopSec.module.css";
+ 
 export default function TopSec() {
   const fullText = `
          To inspire growing young minds through engaging, value-driven stories that nurture empathy, curiosity, and positive character traits — building
@@ -115,7 +115,7 @@ export default function TopSec() {
           <img src={aboutUs} alt="aboutusimage" className={styles.aboutUsImage} />
 
           <div className={styles.aboutUsContent}>
-            <h2 style={{ fontSize: '3rem' }}>About Us</h2>
+            <h2>About Us</h2>
 
             <p className={styles.aboutText}>
               {expanded ? fullText : shortText}

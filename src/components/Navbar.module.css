@@ -164,7 +164,7 @@
 
 /* Responsive Media Queries */
 /* Extra small devices (portrait phones, less than 576px) */
-  @media (max-width: 575.98px) {
+  @media screen and (max-width: 575.98px) {
   .navbarContainer {
     height: 120px;
     padding-right: 1rem;
@@ -424,41 +424,77 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .navbarContainer {
-    height: 300px;
-    padding-right: 5rem;
+    height: 120px;
+    padding-right: 1rem;
+    flex-direction: column;
+    justify-content: center;
   }
-  .sun {
-    height: 1000px;
-    width: 1000px;
-    top: -430px;
-    margin-left: -425px;
-  }
-  .sunLight {
-    height: 1500px;
-    width: 1400px;
-    top: -650px;
-    margin-left: -550px;
+  .sun, .sunLight {
+    height: 90vh;
+    width: 90vh;
+    top: -38vh;
+    margin-left: -38vh;
   }
   .jungleMorals {
-    height: 150px;
-    width: 150px;
-    margin-top: -30px;
+    height: 15vh;
+    width: 15vh;
+    margin-top:-3vh;
+    margin-left: 2px;
   }
-  .homeCloud, .theWhyCloud, .whatCloud, .charactersCloud, .emptyCloud {
-    width: 250px;
-    height: 200px;
-    margin-left: 0;
-    margin-top: 10px;
+  .homeCloud {
+    /* position: relative; */
+    width: 30vh;
+    height: 10vh;
+    margin-left: -10vw;
+    margin-top: -1px;
+  }
+   .whatCloud{
+    width: 170px;
+    height: 90px;
+    margin-left: 17rem;
+    margin-top: 96px;
+
+   }
+  .theWhyCloud{
+    width: 170px;
+    height: 90px;
+    margin-left: 54rem;
+    margin-top: 1px;
+
+  }
+  .charactersCloud{
+    width: 190px;
+    height: 110px;
+    margin-left: 26rem;
+    margin-top: 125px;
+  }
+  .emptyCloud{
+    width: 190px;
+    height: 110px;
+    margin-left: 29rem;
+    margin-top: 2px;
   }
   .cloudWrapper {
-    width: 600px;
-    height: 300px;
-    padding-right: 100px;
+    width: 100%;
+    height: 120px;
+    padding-right: 0;
   }
-  .cloudText, .homeCloudText, .theWhyCloudText, .whatCloudText, .charactersCloudText {
-    font-size: 3rem;
-    margin-top: 0;
+  .cloudText, .homeCloudText {
+    font-size: 2.5rem;
+    margin-top: 17px;
   }
-} */
+  .theWhyCloudText{
+    font-size: 1.7rem;
+    margin-top: 30px;
+  }
+    .charactersCloudText {
+    font-size: 1.4rem;
+    margin-top: 6px;
+  }
+  .whatCloudText{
+    font-size: 1.2rem;
+    margin-top: 26px;
+  }
+}

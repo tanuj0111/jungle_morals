@@ -1,17 +1,19 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+html,
+body {
+ overflow-x: hidden !important;
+   height: 100vh;
+}
 .homeContainer {
   padding: 0;
   margin: 0;
 }
 
-html,
-body {
-  overflow-x: hidden;
-  height: 100vh;
-}
 
 .grassContainer {
   background-image: url('../assets/webp/bggrass.webp');
@@ -21,6 +23,7 @@ body {
   top: 449px !important;
   height:auto;
   min-height: 290vh;
+  /* margin-left: ; */
   position: relative;
   /* background-color: transparent; */
   padding-bottom: 0;
@@ -115,14 +118,14 @@ body {
   top: -340px;
   width: 90%;
   height: 900px;
-  left:200px;
+  left:23vh;
   z-index: 2;
 }
 
 .boardContainer {
   position: absolute;
-  top: 22px;
-  left: 7%;
+  top: 23px;
+  left: 10vh;
   transform: translate(-50%, -50%);
   z-index: 6;
 }
@@ -180,7 +183,7 @@ body {
   position: relative;
   z-index: 4;
   margin-top: 110px;
-  margin-left: 650px;
+  margin-left: 88vh;
   width:50%;
 
 }
@@ -326,7 +329,7 @@ body {
   position: absolute;
   width: 70%;
   top: 180px;
-  margin-left:3%;
+  margin-left:1vh;
   transform: translateX(-50%);
   z-index: 90;
 }
@@ -427,5 +430,428 @@ body {
   margin-top: -15.8rem;
   margin-left: -340px;
   
+}
+/* Responsive Media Queries */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .grassContainer {
+  background-image: url('../assets/webp/bggrass.webp');
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: bottom center; */
+  top: -220px !important;
+  height:auto;
+  min-height: 75vh;
+  position: relative;
+  /* background-color: transparent; */
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.topSection {
+  position: relative;
+}
+
+/* .treeContainer {
+  position: relative;
+} */
+
+.treebottomgrass {
+  position: absolute;
+  left: -9px;
+  width: 140%;
+  /* height: auto; */
+  margin-top:-280px;
+  z-index: 10;
+}
+
+/* .tree {
+  position: absolute;
+  left: 8px;
+  top: -303px;
+  width: 38%;
+  z-index: 8;
+} */
+.treeContainer {
+  position: relative;
+  width: 43%;    
+}
+
+.tree {
+  width: 100%;
+  position: absolute;
+  top: -450px;
+  margin-left: 20px;
+  z-index: 11;
+}
+
+.treeLinks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.treeLinks a {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #065d11;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.jingles {
+  position: relative;
+  margin-top: -44vh;
+  margin-left: 33px;
+  z-index: 20;
+}
+
+.interactive {
+  position: relative; 
+ margin-top: -45vh;
+  margin-left: 112px;
+  z-index: 20;
+  font-size: 1rem  !important
+}
+
+
+.stories {
+  position: relative;
+ margin-top: -38.3vh;
+  margin-left: 113px;
+  z-index: 20;
+}
+
+.mountainContainer {
+  position: relative;
+
+}
+
+.mountain {
+  position: absolute;
+  top: -600px;
+  width: 90%;
+  height: 400px;
+  left:45px;
+  z-index: 2;
+}
+
+.boardContainer {
+  position: absolute;
+  top: 22px;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+.board {
+  width: 420px;
+  height: 350px;
+  margin-top: 23rem;
+  margin-left: 2304px;
+}
+
+.boardText {
+  position: absolute;
+  top: 510px;
+  left: 88%;
+  margin-left: 50px;
+  transform: translate(-19%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.riverContainer {
+  position: relative;
+  top:-23px;
+  left: 460px;
+}
+
+.river {
+  position: absolute;
+  width: 110vw;
+  top:-1vh;
+  margin-left: 9.9vh;;
+  z-index: 9;
+}
+
+
+.flowerCaveSection {
+  position: absolute;
+  margin-top: -5%;
+  left: 4%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flowers {
+  height: 50px;
+  /* width: 30px; */
+  position: relative;
+  z-index: 4;
+  margin-top: 18px;
+  margin-left: 204px;
+  width:40%;
+
+}
+.patchleft {
+  position: absolute;
+  width: 36%;
+  left: 27vh;
+  top: 9vh;
+  z-index: 5;
+}
+.patchright {
+  position: absolute;
+  width: 32%;
+  left:-2vh;
+  top: 9.4vh;
+  z-index: 5;
+}
+
+.caveContainer {
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: -13vh;
+  width: 70%;
+  text-align: center;
+  z-index: 10;
+}
+
+.cave {
+  width: 120%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+.caveText {
+  position: absolute;
+  top: 38%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #004b23;
+}
+
+.caveText2 {
+  position: absolute;
+  top: 52%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  color: #004b23;
+}
+
+.para1SVG {
+  font-size: 4.8rem;
+  font-weight: bold;
+  fill: #004b23;
+}
+
+.para2SVG {
+  font-size: 2.4rem;
+  font-weight: bold;
+  fill: #004b23;
+}
+
+
+.charactersContainer {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 20;
+}
+
+.leftGroup {
+  position: relative;
+  width: 40%;
+}
+
+.wood {
+  width: 72%;
+  position: relative;
+  margin-bottom: -20vh;
+  left: 3px;
+  z-index: 1;
+}
+
+.tiger {
+  width: 60%;
+  position:relative;
+  top: -47vh;
+  left: 1.4vh;
+  z-index: 2;
+
+}
+
+.tigerPaw {
+  position: absolute;
+  width: 10px;
+  padding-top: 20vh;
+  margin-left: 1.4vh;
+  z-index: 3;
+}
+
+.rightGroup {
+  position: relative;
+  width: 40%;
+}
+
+.table {
+  width: 75%;
+  position: relative;
+  bottom: -460px;
+  right: -300px;
+  z-index: 1;
+}
+
+.elphe {
+  width: 71%;
+  position: absolute;
+  bottom: -17.6vh;
+  right: -2.3vh;
+  z-index: 2;
+}
+
+.elphepaw {
+  position: relative;
+  width: 12px;
+  margin-bottom:-28.5vh;
+  margin-left: -5.5vh;
+  z-index: 3;
+}
+
+.boatWrapper {
+  position: absolute;
+  width: 70%;
+  top: -10vh;
+  margin-left:10vh;
+  transform: translateX(-50%);
+  z-index: 900;
+}
+
+.boat {
+  width: 100%;
+  display: block;
+}
+
+.boatBtn {
+  position: absolute;
+  top: 61.5%;
+  left: 80.7%;
+  transform: translate(-50%, -50%);
+  background: inherit;
+  color: green;
+  border: none;
+  padding: 15px 30px;
+  font-size: 2.1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.aboutUsSection {
+  position: absolute;
+  margin-top: -65vh;
+  /* margin-right:0vh; */
+  z-index: 10;
+}
+
+
+.aboutUsImageWrapper {
+  position: relative;
+  width: 120%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.aboutUsImage {
+  width: 65%;
+  display: block;
+  margin-left:15vh;
+  z-index: -50;
+}
+
+.aboutUsContent {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: 20%;
+  transform: translate(-50%, -50%); 
+  width: 17%;
+  padding: 2rem 2rem 1rem 2rem;
+  background: transparent;
+  /* background-color: black; */
+  /* font-size: 1rem; */
+  /* color: #222; */
+  line-height: 0.8;
+  word-wrap: break-word;
+  text-align: center;
+  text-shadow: 1px 1px 8px #fff;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  z-index: 2;
+  /* cursor: default; */
+  text-decoration: none;
+}
+
+.aboutUsContent h2 {
+  /* position: relative; */
+  font-size: 1rem;
+  color: #2fa43e;
+  margin-bottom:1vh;
+  margin-left: -11vh;
+  margin-top:21rem;
+  font-weight: bold;
+}
+
+.aboutText {
+  position: relative;
+  font-size: 0.8rem;
+  color: black;
+  line-height: 0.9;
+  word-wrap: break-word;
+  display: grid;
+  /* display: inline; */
+  text-align: left;
+  margin-left: -16vh ;
+  margin-right: 1vh;
+  margin-bottom: 32vh;
+  
+}
+
+.readMore {
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #2fa43e;
+  margin-top: -33vh;
+  margin-left: -10vh;
+  
+}
 }
 

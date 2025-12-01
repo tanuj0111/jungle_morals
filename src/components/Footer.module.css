@@ -73,30 +73,30 @@
     width: 100%;
     margin-left: 0;
     top: 10px;
-    margin-top: -50px;
+    margin-top:-84vh;
   }
   .footerBg {
     width: 100%;
     margin-top: 350px;
   }
   .footerLinks {
-    background-color: black;
+    /* background-color: black; */
     position: absolute;
     flex-direction: row;
     align-items: center;
-    right: 80px;
+    right: 0vh;
     bottom: -10px;
     margin: 0;
     /* gap: 0.5rem; */
   }
   .footerLinks button {
-    font-size: 1rem;
-    margin-left: 0;
+    font-size: 1.5rem;
+    margin-left: 3vh;
     margin-bottom: 0.5rem;
   }
   .footerLinks button::after {
     right: -10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
