@@ -104,16 +104,65 @@ body {
     pointer-events: none; /* allow clicks to underlying, except card */
 }
 
+/* Centered modal variant for activity card */
+.popoverRootCentered {
+    top: 22%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
 .popoverCard {
     position: relative;
     pointer-events: auto; /* enable clicks on close */
     filter: drop-shadow(0 10px 24px rgba(0,0,0,0.35));
 }
 
+/* Flip card for activity images */
+.flipCard {
+    width: fit-content;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flipInner {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.flipFront, .flipBack {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.flipBack {
+    transform: rotateY(180deg);
+}
+
+.flipped .flipInner {
+    transform: rotateY(180deg);
+}
+
 .popoverImg {
     display: block;
     max-width: min(360px, 42vw);
     height: auto;
+}
+
+/* Fullscreen blur backdrop for centered modal */
+.backdropLayer {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+    z-index: 1099;
+}
+
+/* Make centered modal card larger than anchored popovers */
+.popoverRootCentered .popoverImg {
+    max-width: min(680px, 86vw);
 }
 
 .popoverClose {
@@ -215,7 +264,7 @@ body {
     height: 90vh;
     position: absolute;
     top: 9rem;
-    left: 1rem;
+    left: 3rem;
     width: auto;
     display: block;
 }
@@ -250,7 +299,7 @@ body {
     height: 2vh;
     position: absolute;
     top: 32rem;
-    left: 15.3rem;
+    left: 17rem;
     width: auto;
     display: block;
 }
@@ -258,7 +307,7 @@ body {
     height: 2vh;
     position: absolute;
     top: 39rem;
-    left: 15.3rem;
+    left: 17.3rem;
     width: auto;
     display: block;
 }

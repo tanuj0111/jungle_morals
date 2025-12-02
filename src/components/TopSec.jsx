@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./TopSec.module.css";
 import mountain from "../assets/webp/mountain.webp";
 import tree from "../assets/webp/tree.webp";
@@ -6,8 +6,10 @@ import treebottomgrass from "../assets/webp/treebottomgrass.webp";
 import boat from "../assets/SVG/boat.svg"
 import wood from "../assets/webp/throne.webp"
 import tiger from "../assets/webp/lion.webp"
+import lionboard from '../assets/webp/lionboard.png'
 import Elphe from "../assets/webp/elephant.webp"
 import elphepaw from "../assets/webp/elepaw.webp"
+import elephantbaord from '../assets/webp/elephantboard.png'
 import tigerpaw from "../assets/webp/lionpaw.webp"
 import table from "../assets/webp/table.webp"
 import river from "../assets/webp/river.webp"
@@ -17,6 +19,8 @@ import cave from "../assets/webp/cave1.webp"
 import aboutUs from "../assets/webp/aboutUs.webp";
 import patchright from "../assets/webp/patch_right.webp";
 import patchleft from "../assets/webp/patch_left.webp";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
  
 export default function TopSec() {
   const fullText = `
@@ -29,7 +33,24 @@ export default function TopSec() {
   const shortText = words.slice(0, 20).join(" ");
 
   const [expanded, setExpanded] = useState(false)
+  const [lionOpen, setLionOpen] = useState(false)
+  const [eleOpen, setEleOpen] = useState(false)
+
+  const openLion = () => { setEleOpen(false); setLionOpen(true) }
+  const closeLion = () => setLionOpen(false)
+  const openEle = () => { setLionOpen(false); setEleOpen(true) }
+  const closeEle = () => setEleOpen(false)
+
+  // ESC key handler for either modal
+  useEffect(() => {
+    if (!lionOpen && !eleOpen) return
+    const onKey = (e) => { if (e.key === 'Escape') { closeLion(); closeEle(); } }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [lionOpen, eleOpen])
   return (
+    <>
+    <Navbar />
     <div className={styles.topSection}>
       <div className={styles.treeContainer}>
         <img src={tree} alt="Tree" className={styles.tree} />
@@ -100,13 +121,29 @@ export default function TopSec() {
           <div className={styles.leftGroup}>
             <img src={wood} alt="wood" className={styles.wood} />
             <img src={tiger} alt="tiger" className={styles.tiger} />
-            <img src={tigerpaw} alt="tiger" className={styles.tigerPaw} />
+            <img
+              src={tigerpaw}
+              alt="tiger paw"
+              className={styles.tigerPaw}
+              role="button"
+              tabIndex={0}
+              onClick={openLion}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') openLion() }}
+            />
           </div>
 
           <div className={styles.rightGroup}>
             <img src={table} alt="table" className={styles.table} />
             <img src={Elphe} alt="elphe" className={styles.elphe} />
-            <img src={elphepaw} alt="elphepaw" className={styles.elphepaw} />
+            <img
+              src={elphepaw}
+              alt="elephant paw"
+              className={styles.elphepaw}
+              role="button"
+              tabIndex={0}
+              onClick={openEle}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') openEle() }}
+            />
           </div>
         </div>
       </div>
@@ -133,6 +170,17 @@ export default function TopSec() {
           </div>
         </div>
       </div>
+      {(lionOpen || eleOpen) && (
+        <>
+          <div className={styles.backdropLayer} onClick={() => { closeLion(); closeEle(); }} />
+          <div className={styles.centerModal} role="dialog" aria-modal="true" onClick={(e) => e.stopPropagation()}>
+            {lionOpen && <img src={lionboard} alt="Liona intro" className={styles.centerImg} />}
+            {eleOpen && <img src={elephantbaord} alt="Elephiphi intro" className={styles.centerImg} />}
+          </div>
+        </>
+      )}
     </div>
+    <Footer />
+    </>
   )
 }

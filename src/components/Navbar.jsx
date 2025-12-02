@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import Sun from "../assets/webp/sunlight.webp";
 import junglemorals from "../assets/webp/Asset.webp";
@@ -25,12 +26,13 @@ function Navbar() {
       <div style={{
         height: "300px",
       }} >
-        <div className="position-absolute top-0 start-0 w-100 h-100 opacity-25">
+        <div className="position-absolute top-0 start-0 w-100 h-100 opacity-25" style={{ pointerEvents: 'none' }}>
           <div
             className="position-absolute top-0 start-0 w-100 h-100"
             style={{
               backgroundImage:
                 "repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.3) 35px, rgba(255,255,255,0.3) 70px)",
+              pointerEvents: 'none'
             }}
           ></div>
         </div>
@@ -65,14 +67,14 @@ function Navbar() {
             style={{ width: "600px", height: "300px", paddingRight: "100px" }}
           >
             <div className={`position-absolute z-3 ${styles.homeCloudOuter}`}>
-              <div className={`position-relative ${styles.homeCloud}`}>
+              <Link to="/" className={`position-relative ${styles.homeCloud}`} style={{ display: 'block' }}>
                 <img src={cloud4} alt="cloud" className="position-absolute w-100 h-110 object-fit-contain" />
                 <div className={`position-absolute w-100 h-100 d-flex align-items-center justify-content-center`}>
                   <span className={`${styles.homeCloudText}`} >
                     Home
                   </span>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className={`position-absolute  z-3 ${styles.theWhyCloudOuter}`}>
@@ -87,32 +89,37 @@ function Navbar() {
             </div>
 
             <div className={`position-absolute  z-2 ${styles.whatCloudOuter}`}>
-              <div className={`position-relative ${styles.whatCloud}`}>
+              <Link to="/whatwedo" className={`position-relative ${styles.whatCloud}`} style={{ display: 'block' }}>
                 <img src={cloud1} alt="cloud" className="position-absolute w-100 h-110 object-fit-contain" />
                 <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
                   <span className={`${styles.whatCloudText}`} style={{ color: "#0f766e" }}>
                     What We Do
                   </span>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className={`position-absolute  z-2 ${styles.charactersCloudOuter}`}>
-              <div className={`position-relative ${styles.charactersCloud}`}>
+              <Link to="/characters" className={`position-relative ${styles.charactersCloud}`} style={{ display: 'block' }}>
                 <img src={cloud3} alt="cloud" className="position-absolute w-100 h-110 object-fit-contain" />
                 <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
                   <span className={`${styles.charactersCloudText}`} style={{ color: "#0f766e" }}>
                     Characters
                   </span>
                 </div>
-              </div>
+              </Link>
             </div>
 
 
             <div className={`position-absolute  z-2 ${styles.emptyCloudOuter}`}>
-              <div className={`position-relative ${styles.emptyCloud}`}>
+              <Link to="/about" className={`position-relative ${styles.emptyCloud}`} style={{ display: 'block' }}>
                 <img src={cloud5} alt="cloud" className="position-absolute w-100 h-100  object-fit-contain" />
-              </div>
+                <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                  <span className={`${styles.aboutCloudText}`} style={{ color: "#0f766e" }}>
+                    Aboutus
+                  </span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
