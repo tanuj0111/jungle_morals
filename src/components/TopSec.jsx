@@ -1,21 +1,23 @@
 import React, { useState } from "react";
-import mountain from "../assets/SVG/Asset 21.svg";
-import tree from "../assets/SVG/Asset 3.svg";
-import treebottomgrass from "../assets/SVG/treebottomgrass.svg"
-import boat from "../assets/SVG/boat.svg"
-import wood from "../assets/SVG/wood.svg"
-import tiger from "../assets/SVG/tiger.svg"
-import Elphe from "../assets/SVG/Elphe.svg"
-import elphepaw from "../assets/SVG/elphepaw.svg"
-import tigerpaw from "../assets/SVG/tigerpaw.svg"
-import table from "../assets/SVG/table.svg"
-import river from "../assets/SVG/river.svg"
-import flowers from "../assets/SVG/flowers.svg"
-import board from "../assets/SVG/board.svg"
-import cave from "../assets/SVG/cave.svg"
-import aboutUs from "../assets/SVG/aboutUs.png";
-
 import styles from "./TopSec.module.css";
+import mountain from "../assets/webp/mountain.webp";
+import tree from "../assets/webp/tree.webp";
+import treebottomgrass from "../assets/webp/treebottomgrass.webp";
+import boat from "../assets/SVG/boat.svg"
+import wood from "../assets/webp/throne.webp"
+import tiger from "../assets/webp/lion.webp"
+import Elphe from "../assets/webp/elephant.webp"
+import elphepaw from "../assets/webp/elepaw.webp"
+import tigerpaw from "../assets/webp/lionpaw.webp"
+import table from "../assets/webp/table.webp"
+import river from "../assets/webp/river.webp"
+import flowers from "../assets/webp/flower.webp"
+import board from "../assets/webp/board.webp"
+import cave from "../assets/webp/cave1.webp"
+import aboutUs from "../assets/webp/aboutUs.webp";
+import patchright from "../assets/webp/patch_right.webp";
+import patchleft from "../assets/webp/patch_left.webp";
+ 
 export default function TopSec() {
   const fullText = `
          To inspire growing young minds through engaging, value-driven stories that nurture empathy, curiosity, and positive character traits — building
@@ -34,7 +36,7 @@ export default function TopSec() {
 
         <div className={styles.treeLinks}>
           <a href="/jingles" className={styles.jingles}>Jingles</a>
-          <a href="/interactives" className={styles.interactive}>Interactives</a>
+          <a href="/interactives" style={{ fontSize: '2rem' }} className={styles.interactive}>Interactives</a>
           <a href="/stories" className={styles.stories}>Stories</a>
         </div>
         <img src={treebottomgrass} alt="treebottomgrass" className={styles.treebottomgrass} />
@@ -45,7 +47,7 @@ export default function TopSec() {
         <div className={styles.boardContainer}>
           <img src={board} alt="board" className={styles.board} />
           <div className={styles.boardText}>
-            <p>For Kids' Joy, and Parents' Peace of Mind</p>
+            <p>For Kids' Joy and Parents' Peace of Mind</p>
           </div>
         </div>
       </div>
@@ -61,7 +63,9 @@ export default function TopSec() {
           </div>
         </div>
         <div className={styles.flowerCaveSection}>
-          <img src={flowers} alt="flowers" className={styles.flowers} />
+          <img src={flowers} alt="flower" className={styles.flowers} />
+          <img src={patchleft} alt="patch" className={styles.patchleft} />
+          <img src={patchright} alt="patch" className={styles.patchright} />
 
           <div className={styles.caveContainer}>
             <img src={cave} alt="cave" className={styles.cave} />
@@ -69,10 +73,10 @@ export default function TopSec() {
 
               <svg width="100%" height="250" viewBox="0 0 1000 300">
                 <defs>
-                  <path id="curve1" d="M 50 200 Q 500 10 950 200"/>
+                  <path id="curve1" d="M 50 350 Q 500 -100 950 350" />
                 </defs>
                 <text className={styles.para1SVG}>
-                  <textPath href="#curve1" startOffset="50%" text-anchor="middle">
+                  <textPath href="#curve1" startOffset="50%" textAnchor="middle">
                     Say Hi to our Cuties
                   </textPath>
                 </text>
@@ -81,10 +85,10 @@ export default function TopSec() {
             <div className={styles.caveText2}>
               <svg width="100%" height="250" viewBox="0 0 1000 300">
                 <defs>
-                  <path id="curve1" d="M 50 200 Q 500 10 950 200" />
+                  <path id="curve2" d="M 70 420 Q 500 -165 950 400" />
                 </defs>
                 <text className={styles.para2SVG}>
-                  <textPath href="#curve1" startOffset="50%" text-anchor="middle">
+                  <textPath href="#curve2" startOffset="50%" text-anchor="middle">
                     Click The Paws!
                   </textPath>
                 </text>
@@ -108,7 +112,7 @@ export default function TopSec() {
       </div>
       <div className={styles.aboutUsSection}>
         <div className={styles.aboutUsImageWrapper}>
-          <img src={aboutUs} className={styles.aboutUsImage} />
+          <img src={aboutUs} alt="aboutusimage" className={styles.aboutUsImage} />
 
           <div className={styles.aboutUsContent}>
             <h2>About Us</h2>

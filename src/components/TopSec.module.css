@@ -1,28 +1,32 @@
 * {
   box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
 }
 
+html,
+body {
+ overflow-x: hidden !important;
+   height: 100vh;
+}
 .homeContainer {
   padding: 0;
   margin: 0;
 }
 
-html,
-body {
-  overflow-x: hidden;
-  height: 100vh;
-}
 
 .grassContainer {
-  background-image: url('../assets/2x/grass.png');
+  background-image: url('../assets/webp/bggrass.webp');
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  top: 850px !important;
-  height: auto;
-  min-height: 300vh;
+  /* background-repeat: no-repeat; */
+  /* background-position: bottom center; */
+  top: 449px !important;
+  height:auto;
+  min-height: 290vh;
   position: relative;
-  background-color: transparent;
+  /* margin-left: ; */
+  position: relative;
+  /* background-color: transparent; */
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -37,10 +41,11 @@ body {
 
 .treebottomgrass {
   position: absolute;
-  left: -17px;
-  width: 100%;
-  top: 722px;
-  z-index: 6;
+  left: -9px;
+  width: 140%;
+  /* height: auto; */
+  margin-top:380px;
+  z-index: 10;
 }
 
 /* .tree {
@@ -52,15 +57,15 @@ body {
 } */
 .treeContainer {
   position: relative;
-  width: 38%;
+  width: 38%;    
 }
 
 .tree {
-  width: 100%;
+  width: 90%;
   position: absolute;
-  top: -303px;
-  left: 8px;
-  z-index: 8;
+  top: -130px;
+  margin-left: 140px;
+  z-index: 11;
 }
 
 .treeLinks {
@@ -74,7 +79,7 @@ body {
 
 .treeLinks a {
   position: absolute;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #065d11;
   text-decoration: none;
@@ -84,81 +89,88 @@ body {
 
 .jingles {
   position: relative;
-  top: 225px;
-  left: 110px;
+  margin-top:150px;
+  margin-left: 180px;
   z-index: 20;
 }
 
 .interactive {
-  position: relative;
-  top: 200px;
-  left: 560px;
+  position: relative; 
+  margin-top: 140px;
+  margin-left: 440px;
   z-index: 20;
 }
 
+
 .stories {
   position: relative;
-  top: 500px;
-  left: 564px;
+  margin-top: 300px;
+  margin-left: 430px;
   z-index: 20;
 }
 
 .mountainContainer {
   position: relative;
+
 }
 
 .mountain {
   position: absolute;
-  top: -500px;
-  width: 100%;
-  height: 1600px;
-  left: 6%;
+  top: -340px;
+  width: 90%;
+  height: 900px;
+  left:23vh;
   z-index: 2;
 }
 
 .boardContainer {
   position: absolute;
-  top: 495px;
-  left: 82%;
+  top: 23px;
+  left: 10vh;
   transform: translate(-50%, -50%);
   z-index: 6;
 }
 
 .board {
-  width: 550px;
-  height: auto;
+  width: 420px;
+  height: 350px;
+  margin-top: 23rem;
+  margin-left: 2304px;
 }
 
 .boardText {
   position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 510px;
+  left: 88%;
+  margin-left: 50px;
+  transform: translate(-19%, -50%);
   color: white;
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  line-height: 1;
+  line-height: 1.1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .riverContainer {
   position: relative;
+  top:-23px;
+  left: 460px;
 }
 
 .river {
   position: absolute;
-  width: 100%;
-  top: 5px;
-  left: -616px;
-  z-index: 7;
+  width: 90%;
+  top:65px;
+  left:-650px;
+  z-index: 2;
 }
 
 
 .flowerCaveSection {
   position: absolute;
-  top: 4%;
-  left: 0%;
+  margin-top: -5%;
+  left: 4%;
   width: 100%;
   height: auto;
   display: flex;
@@ -167,33 +179,54 @@ body {
 }
 
 .flowers {
+  height: 190px;
+  /* width: 30px; */
   position: relative;
   z-index: 4;
+  margin-top: 110px;
+  margin-left: 88vh;
+  width:50%;
+
+}
+.patchleft {
+  position: absolute;
+  width: 33%;
+  left: 780px;
+  top: 360px;
+  z-index: 5;
+}
+.patchright {
+  position: absolute;
+  width: 33%;
+  left: 7px;
+  top: 350px;
+  z-index: 5;
 }
 
 .caveContainer {
   position: absolute;
-  top: -5%;
-  left: 5%;
-  width: 70%;
+  margin-top: 13%;
+  margin-left: -27%;
+  width: 55%;
   text-align: center;
   z-index: 10;
 }
 
 .cave {
-  width: 100%;
+  width: 120%;
   height: auto;
   display: block;
   margin: 0 auto;
+
 }
 
 
 .caveText {
   position: absolute;
   top: 38%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 100%;
   text-align: center;
   color: #004b23;
 }
@@ -201,21 +234,21 @@ body {
 .caveText2 {
   position: absolute;
   top: 52%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 90%;
   text-align: center;
   color: #004b23;
 }
 
 .para1SVG {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
   fill: #004b23;
 }
 
 .para2SVG {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   fill: #004b23;
 }
@@ -239,27 +272,28 @@ body {
 }
 
 .wood {
-  width: 80%;
+  width: 72%;
   position: relative;
-  bottom: -700px;
-  left: -100px;
+  margin-bottom: -800px;
+  left: 50px;
   z-index: 1;
 }
 
 .tiger {
-  width: 60%;
-  position: absolute;
-  bottom: -1100px;
-  left: -0%;
+  width: 50%;
+  position:  relative;
+  margin-bottom: -990px  ;
+  left: 20%;
   z-index: 2;
 
 }
 
 .tigerPaw {
   position: absolute;
-  width: 80px;
-  bottom: -1080px;
-  left: 60%;
+  width: 30px;
+  padding-top: 650px;
+  margin-bottom: 300px;
+  margin-left: 110px;
   z-index: 3;
 }
 
@@ -269,34 +303,34 @@ body {
 }
 
 .table {
-  width: 80%;
+  width: 75%;
   position: relative;
-  bottom: -600px;
-  right: -450px;
+  bottom: -460px;
+  right: -300px;
   z-index: 1;
 }
 
 .elphe {
-  width: 80%;
+  width: 65%;
   position: absolute;
-  bottom: -1000px;
-  right: -6%;
+  bottom: -680px;
+  right: -1%;
   z-index: 2;
 }
 
 .elphepaw {
-  position: absolute;
-  width: 80px;
-  bottom: -620px;
-  left: 28%;
+  position: relative;
+  width: 35px;
+  margin-bottom: -1200px;
+  margin-left: -37%;
   z-index: 3;
 }
 
 .boatWrapper {
   position: absolute;
-  width: 90%;
-  top: -45px;
-  left: 22%;
+  width: 70%;
+  top: 180px;
+  margin-left:1vh;
   transform: translateX(-50%);
   z-index: 90;
 }
@@ -308,14 +342,14 @@ body {
 
 .boatBtn {
   position: absolute;
-  top: 61%;
-  left: 80%;
+  top: 61.5%;
+  left: 80.7%;
   transform: translate(-50%, -50%);
   background: inherit;
   color: green;
   border: none;
   padding: 15px 30px;
-  font-size: 4.2rem;
+  font-size: 2.1rem;
   font-weight: bold;
   border-radius: 12px;
   cursor: pointer;
@@ -324,839 +358,501 @@ body {
 
 .aboutUsSection {
   position: absolute;
-  top: 80%;
-  right: -45%;
+  margin-top: -35%;
+  margin-right:10px;
   z-index: 10;
 }
 
+
 .aboutUsImageWrapper {
   position: relative;
-  width: 60%;
+  width: 110%;
   overflow: hidden;
   z-index: 10;
 }
 
 .aboutUsImage {
+  width: 55%;
+  display: block;
+  margin-left: 40%;
+  z-index: -50;
+}
+
+.aboutUsContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 20%;
+  transform: translate(-50%, -50%); 
+  width: 47%;
+  padding: 2rem 2rem 1rem 2rem;
+  background: transparent;
+  /* font-size: 1rem; */
+  /* color: #222; */
+  line-height: 1.7;
+  word-wrap: break-word;
+  text-align: center;
+  text-shadow: 1px 1px 8px #fff;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  z-index: 2;
+  /* cursor: default; */
+  text-decoration: none;
+}
+
+.aboutUsContent h2 {
+  font-size: 2rem;
+  color: #2fa43e;
+  margin-bottom:-10px;
+  margin-left: -25px;
+  margin-top:1px;
+  font-weight: bold;
+}
+
+.aboutText {
+  font-size: 1.6rem;
+  color: black;
+  line-height: 1.8;
+  word-wrap: break-word;
+  /* display: inline; */
+  text-align: left;
+  /* margin-left: 250px ; */
+  margin-right: 120px;
+  margin-bottom: 210px;
+  
+}
+
+.readMore {
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #2fa43e;
+  margin-top: -15.8rem;
+  margin-left: -340px;
+  
+}
+/* Responsive Media Queries */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .grassContainer {
+  background-image: url('../assets/webp/bggrass.webp');
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: bottom center; */
+  top: -220px !important;
+  height:auto;
+  min-height: 75vh;
+  position: relative;
+  /* background-color: transparent; */
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.topSection {
+  position: relative;
+}
+
+/* .treeContainer {
+  position: relative;
+} */
+
+.treebottomgrass {
+  position: absolute;
+  left: -9px;
+  width: 140%;
+  /* height: auto; */
+  margin-top:-280px;
+  z-index: 10;
+}
+
+/* .tree {
+  position: absolute;
+  left: 8px;
+  top: -303px;
+  width: 38%;
+  z-index: 8;
+} */
+.treeContainer {
+  position: relative;
+  width: 43%;    
+}
+
+.tree {
+  width: 100%;
+  position: absolute;
+  top: -450px;
+  margin-left: 20px;
+  z-index: 11;
+}
+
+.treeLinks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.treeLinks a {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #065d11;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.jingles {
+  position: relative;
+  margin-top: -44vh;
+  margin-left: 33px;
+  z-index: 20;
+}
+
+.interactive {
+  position: relative; 
+ margin-top: -45vh;
+  margin-left: 112px;
+  z-index: 20;
+  font-size: 1rem  !important
+}
+
+
+.stories {
+  position: relative;
+ margin-top: -38.3vh;
+  margin-left: 113px;
+  z-index: 20;
+}
+
+.mountainContainer {
+  position: relative;
+
+}
+
+.mountain {
+  position: absolute;
+  top: -600px;
+  width: 90%;
+  height: 400px;
+  left:45px;
+  z-index: 2;
+}
+
+.boardContainer {
+  position: absolute;
+  top: -2rem;
+  left:10vh;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+.board {
+  width: 420px;
+  height: 350px;
+  margin-top: 23rem;
+  margin-left: 2304px;
+}
+
+.boardText {
+  position: absolute;
+  top: 510px;
+  left: 88%;
+  margin-left: 50px;
+  transform: translate(-19%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.riverContainer {
+  position: relative;
+  top:-23px;
+  left: 460px;
+}
+
+.river {
+  position: absolute;
+  width: 110vw;
+  top:-1vh;
+  margin-left: 9.9vh;;
+  z-index: 9;
+}
+
+
+.flowerCaveSection {
+  position: absolute;
+  margin-top: -5%;
+  left: 4%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flowers {
+  height: 50px;
+  /* width: 30px; */
+  position: relative;
+  z-index: 4;
+  margin-top: 18px;
+  margin-left: 204px;
+  width:40%;
+
+}
+.patchleft {
+  position: absolute;
+  width: 36%;
+  left: 27vh;
+  top: 9vh;
+  z-index: 5;
+}
+.patchright {
+  position: absolute;
+  width: 32%;
+  left:-2vh;
+  top: 9.4vh;
+  z-index: 5;
+}
+
+.caveContainer {
+  position: absolute;
+  margin-top: 2vh;
+  margin-left: -13vh;
+  width: 70%;
+  text-align: center;
+  z-index: 10;
+}
+
+.cave {
+  width: 120%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+.caveText {
+  position: absolute;
+  top: 38%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #004b23;
+}
+
+.caveText2 {
+  position: absolute;
+  top: 52%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  color: #004b23;
+}
+
+.para1SVG {
+  font-size: 4.8rem;
+  font-weight: bold;
+  fill: #004b23;
+}
+
+.para2SVG {
+  font-size: 2.4rem;
+  font-weight: bold;
+  fill: #004b23;
+}
+
+
+.charactersContainer {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 20;
+}
+
+.leftGroup {
+  position: relative;
+  width: 40%;
+}
+
+.wood {
+  width: 72%;
+  position: relative;
+  margin-bottom: -20vh;
+  left: 3px;
+  z-index: 1;
+}
+
+.tiger {
+  width: 60%;
+  position:relative;
+  top: -47vh;
+  left: 1.4vh;
+  z-index: 2;
+
+}
+
+.tigerPaw {
+  position: absolute;
+  width: 10px;
+  padding-top: 20vh;
+  margin-left: 1.4vh;
+  z-index: 3;
+}
+
+.rightGroup {
+  position: relative;
+  width: 40%;
+}
+
+.table {
+  width: 75%;
+  position: relative;
+  bottom: -460px;
+  right: -300px;
+  z-index: 1;
+}
+
+.elphe {
+  width: 71%;
+  position: absolute;
+  bottom: -17.6vh;
+  right: -2.3vh;
+  z-index: 2;
+}
+
+.elphepaw {
+  position: relative;
+  width: 12px;
+  margin-bottom:-28.5vh;
+  margin-left: -5.5vh;
+  z-index: 3;
+}
+
+.boatWrapper {
+  position: absolute;
+  width: 70%;
+  top: -10vh;
+  margin-left:10vh;
+  transform: translateX(-50%);
+  z-index: 900;
+}
+
+.boat {
   width: 100%;
   display: block;
+}
+
+.boatBtn {
+  position: absolute;
+  top: 61.5%;
+  left: 80.7%;
+  transform: translate(-50%, -50%);
+  background: inherit;
+  color: green;
+  border: none;
+  padding: 15px 30px;
+  font-size: 2.1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.aboutUsSection {
+  position: absolute;
+  margin-top: -65vh;
+  /* margin-right:0vh; */
+  z-index: 10;
+}
+
+
+.aboutUsImageWrapper {
+  position: relative;
+  width: 120%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.aboutUsImage {
+  width: 65%;
+  display: block;
+  margin-left:15vh;
+  z-index: -50;
 }
 
 .aboutUsContent {
   position: absolute;
   top: 20%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
+  margin-left: 20%;
+  transform: translate(-50%, -50%); 
+  width: 17%;
+  padding: 2rem 2rem 1rem 2rem;
+  background: transparent;
+  /* background-color: black; */
+  /* font-size: 1rem; */
+  /* color: #222; */
+  line-height: 0.8;
+  word-wrap: break-word;
   text-align: center;
+  text-shadow: 1px 1px 8px #fff;
+  border-radius: 1rem;
+  box-sizing: border-box;
   z-index: 2;
+  /* cursor: default; */
+  text-decoration: none;
 }
 
 .aboutUsContent h2 {
-  font-size: 5rem;
+  /* position: relative; */
+  font-size: 1rem;
   color: #2fa43e;
-  margin-bottom: 10px;
+  margin-bottom:1vh;
+  margin-left: -11vh;
+  margin-top:21rem;
+  font-weight: bold;
 }
 
 .aboutText {
-  font-size: 3rem;
+  position: relative;
+  font-size: 0.8rem;
   color: black;
-  line-height: 1.8;
+  line-height: 0.9;
   word-wrap: break-word;
-  display: inline;
+  display: grid;
+  /* display: inline; */
+  text-align: left;
+  margin-left: -16vh ;
+  margin-right: 1vh;
+  margin-bottom: 32vh;
+  
 }
 
 .readMore {
-  font-size: 3rem;
+  position: absolute;
+  font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
   color: #2fa43e;
-
+  margin-top: -33vh;
+  margin-left: -10vh;
+  
+}
 }
 
-@media(max-width:2472px) {
-  .boardContainer {
-    top: 530px;
-  }
-
-  .treebottomgrass {
-    top: 756px;
-  }
-
-  .tree {
-    top: -288px;
-  }
-
-  .river {
-    top: 24px;
-    left: -570px;
-  }
-
-  .interactive {
-    top: 187px;
-    left: 532px;
-  }
-
-  .flowerCaveSection {
-    top: 3%;
-  }
-
-  .tiger {
-    bottom: -1064px;
-  }
-
-  .tigerPaw {
-    bottom: -1035px;
-  }
-
-  .aboutUsSection {
-    top: 83%;
-    right: -46%;
-  }
-}
-
-@media(max-width:2430px) {
-  .boardContainer {
-    top: 513px;
-    left: 83%;
-  }
-
-  .tree {
-    top: -256px;
-    left: -5px;
-  }
-
-  .jingles {
-    top: 239px;
-    left: 95px;
-  }
-
-  .interactive {
-    top: 230px;
-    left: 552px;
-    font-size: 3rem !important;
-  }
-
-  .stories {
-    top: 506px;
-    left: 528px;
-  }
-
-  .caveContainer {
-    top: -2%;
-    left: 7%;
-  }
-}
-
-@media(max-width:2390px) {
-  .boardContainer {
-    top: 522px;
-  }
-
-  .tree {
-    top: -212px;
-    left: 18px;
-  }
-
-  .jingles {
-    top: 257px;
-    left: 104px;
-  }
-
-  .interactive {
-    top: 252px;
-    left: 574px;
-  }
-
-  .stories {
-    top: 532px;
-    left: 536px;
-  }
-
-  .aboutUsSection {
-    top: 84%;
-    right: -46%;
-  }
-
-  .footerMain {
-    top: 52px;
-  }
-  .aboutUsImageWrapper{
-    width: 70%;
-  }
-  .aboutUsSection{
-        top: 80%;
-        right: -38%;
-    }
-    .aboutUsContent h2 {
-    font-size: 6rem;
-    }
-}
-@media(max-width:2360px){
-  .boardContainer{
-        top: 514px;
-        left: 84%;
-    }
-    .flowerCaveSection{
-        top: 4%;
-    }
-    .river{
-        top: 39px;
-        left: -552px;
-    }
-    .elphepaw{
-    bottom: -636px;
-    left: 27%;
-    }
-    .boatWrapper{
-    left: 24%;
-    }
-}
-@media(max-width:1440px) and (min-width:1025px) {
-  .mountain {
-    left: 90px;
-  }
-
-  .board {
-    width: 400px;
-    height: auto;
-  }
-
-  .boardContainer {
-    top: 406px;
-    left: 85%;
-  }
-
-  .boardText {
-    top: 26%;
-    left: 40%;
-    font-size: 2rem;
-  }
-
-  .grassContainer {
-    background-image: url('../assets/2x/grass.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    top: 760px !important;
-    min-height: 200vh;
-    position: relative;
-    background-color: transparent;
-  }
-
-  .caveText {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    text-align: center;
-    color: #004b23;
-  }
-
-  .caveText2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 42%;
-    text-align: center;
-    color: #004b23;
-  }
-
-  .treebottomgrass {
-    top: 596px;
-  }
-
-  .tree {
-    top: -3px;
-    left: -1px;
-  }
-
-  .treeLinks a {
-    font-size: 3rem;
-  }
-
-  .jingles {
-    top: 278px;
-    left: 43px;
-  }
-
-  .interactive {
-    top: 276px;
-    left: 312px;
-    font-size: 35px !important;
-  }
-
-  .stories {
-    top: 455px;
-    left: 312px;
-    font-size: 36px !important;
-  }
-
-  .river {
-    top: -84px;
-    left: -342px;
-  }
-
-  .flowerCaveSection {
-    top: -1%;
-  }
-
-  .wood {
-    top: 300px;
-    left: -52px;
-  }
-
-  .tiger {
-    top: 440px;
-  }
-
-  .tigerPaw {
-    top: 800px;
-    width: 62px;
-  }
-
-  .table {
-    width: 100%;
-    bottom: -200px;
-    right: -224px;
-  }
-
-  .elphe {
-    bottom: -460px;
-    right: -10%;
-  }
-
-  .elphepaw {
-    width: 60px;
-    top: 496px;
-    left: 29%;
-  }
-
-  .boatBtn {
-    font-size: 2rem;
-  }
-
-  .boatWrapper {
-    top: -88px;
-  }
-
-  .aboutUsImageWrapper {
-    width: 40%;
-  }
-
-  .aboutUsSection {
-    top: 2006px;
-    right: -110%;
-  }
-
-  .aboutUsContent h2 {
-    font-size: 3rem;
-  }
-
-  .aboutText {
-    font-size: 30px;
-  }
-
-  .readMore {
-    font-size: 30px;
-  }
-}
-
-@media (min-width:769px) and (max-width:1024px) {
-  .mountain {
-    top: -840px;
-    width: 90%;
-    left: 12%;
-  }
-
-  .board {
-    width: 300px;
-  }
-
-  .boardContainer {
-    top: 17px;
-    left: 82%;
-  }
-
-  .boardText {
-    font-size: 20px;
-  }
-
-  .tree {
-    top: -328px;
-    width: 110%;
-    left: 24px;
-  }
-
-  .treebottomgrass {
-    width: 124%;
-    top: 115px;
-  }
-
-  .treeLinks a {
-    font-size: 2rem;
-  }
-
-  .jingles {
-    top: -102px;
-    left: 70px;
-  }
-
-  .interactive {
-    top: -104px;
-    left: 265px;
-    font-size: 28px !important;
-  }
-
-  .stories {
-    top: 24px;
-    left: 270px;
-  }
-
-  .grassContainer {
-    background-image: url('../assets/2x/grass.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    top: 248px !important;
-    min-height: 180vh;
-  }
-
-  .caveText {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    text-align: center;
-    color: #004b23;
-  }
-
-  .caveText2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 42%;
-    text-align: center;
-    color: #004b23;
-  }
-
-  .river {
-    top: -68px;
-    left: -214px;
-  }
-
-  .flowerCaveSection {
-    left: 0%;
-    top: -1%;
-  }
-
-  .caveContainer {
-    left: 8%;
-  }
-
-  .wood {
-    top: 200px;
-    left: -20px;
-  }
-
-  .tiger {
-    top: 268px;
-    left: 3%;
-  }
-
-  .tigerPaw {
-    width: 50px;
-    top: 513px;
-    left: 68%;
-  }
-
-  .table {
-    width: 100%;
-    top: 155px;
-    right: -143px;
-  }
-
-  .elphe {
-    width: 74%;
-    top: 260px;
-    right: -44px;
-  }
-
-  .elphepaw {
-    width: 40px;
-    top: 358px;
-    left: 38%;
-  }
-
-  .boatWrapper {
-    width: 90%;
-    top: -74px;
-    left: 26%;
-  }
-
-  .boatBtn {
-    font-size: 24px;
-  }
-
-  .aboutUsSection {
-    top: 68%;
-    right: -158%;
-  }
-
-  .aboutText {
-    font-size: 30px;
-  }
-
-  .readMore {
-    font-size: 30px;
-  }
-
-  .aboutUsContent h2 {
-    font-size: 4rem;
-  }
-
-  .aboutUsImageWrapper {
-    width: 40%;
-  }
-}
-
-@media(min-width:426px) and (max-width:768px) {
-  .grassContainer {
-    background-image: url('../assets/2x/grass.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    top: 260px !important;
-    min-height: 100vh;
-  }
-
-  .caveText {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    text-align: center;
-    color: #004b23;
-  }
-
-  .caveText2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 42%;
-    text-align: center;
-    color: #004b23;
-  }
-
-  .para2SVG {
-    font-size: 2.6rem;
-  }
-
-  .mountain {
-    height: 1000px;
-    left: 2%;
-    top: -489px;
-  }
-
-  .tree {
-    top: -163px;
-    left: -3px;
-  }
-
-  .treebottomgrass {
-    width: 130%;
-    top: 140px;
-  }
-
-  .boardContainer {
-    top: 78px;
-    left: 80%;
-  }
-
-  .board {
-    width: 200px;
-  }
-
-  .boardText {
-    font-size: 14px;
-  }
-
-  .treeLinks a {
-    font-size: 18px;
-  }
-
-  .jingles {
-    top: 0px;
-    left: 34px;
-  }
-
-  .interactive {
-    top: -12px;
-    left: 166px;
-  }
-
-  .stories {
-    top: 80px;
-    left: 172px;
-  }
-
-  .river {
-    top: -80px;
-    left: -190px;
-  }
-
-  .flowerCaveSection {
-    top: -1%;
-    left: 0%;
-  }
-
-  .caveContainer {
-    top: -3%;
-    left: 4%;
-  }
-
-  .wood {
-    top: 138px;
-    left: -26px;
-  }
-
-  .tiger {
-    top: 194px;
-  }
-
-  .tigerPaw {
-    width: 30px;
-    top: 390px;
-  }
-
-  .table {
-    width: 100%;
-    top: 100px;
-    right: -99px;
-  }
-
-  .elphe {
-    top: 175px;
-    right: -4%;
-  }
-
-  .elphepaw {
-    width: 30px;
-    top: 256px;
-    left: 24%;
-  }
-
-  .footerMain {
-    width: 100%;
-    margin-left: -0px;
-  }
-
-  .readMore {
-    font-size: 12px;
-  }
-
-  .boatBtn {
-    font-size: 16px;
-  }
-
-  .boatWrapper {
-    width: 90%;
-    top: -84px;
-    left: 22%;
-  }
-
-  .aboutUsImageWrapper {
-    width: 20%;
-  }
-
-  .aboutUsSection {
-    top: 80%;
-    right: -268%;
-  }
-
-  .aboutUsContent h2 {
-    font-size: 28px;
-  }
-
-  .aboutText {
-    font-size: 14px;
-  }
-}
-
-@media(max-width:414px) {
-  .aboutUsSection {
-    top: 74% !important;
-    right: -520% !important;
-  }
-
-  .footerMain {
-    top: 32px;
-  }
-
-  .grassContainer {
-    background-image: url('../assets/2x/grass.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    top: 142px !important;
-  }
-}
-
-@media(min-width:415px) and (max-width:425px) {
-  .grassContainer {
-    background-image: url('../assets/2x/grass.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    top: 146px !important;
-    min-height: 100vh;
-  }
-
-  .mountain {
-    height: 500px;
-    left: 2%;
-    top: -242px;
-  }
-
-  .board {
-    width: 100px;
-  }
-
-  .boardContainer {
-    top: 50px;
-    left: 80%;
-  }
-
-  .boardText {
-    font-size: 8px;
-    margin-top: 12px;
-  }
-
-  .treebottomgrass {
-    width: 138%;
-    top: 72px;
-  }
-
-  .tree {
-    top: -112px;
-    left: 5px;
-    width: 108%;
-  }
-
-  .jingles {
-    top: -18px;
-    left: 18px;
-    font-size: 14px !important;
-  }
-
-  .interactive {
-    top: -24px;
-    left: 100px;
-    font-size: 12px !important;
-  }
-
-  .stories {
-    top: 34px;
-    left: 105px;
-    font-size: 12px !important;
-  }
-
-  .river {
-    top: -46px;
-    left: -100px;
-  }
-
-  .flowerCaveSection {
-    left: 0%;
-    top: 0%;
-  }
-
-  .caveContainer {
-    left: 5%;
-    top: 0%;
-  }
-
-  .wood {
-    top: 49px;
-    left: -18px;
-  }
-
-  .tiger {
-    top: 65px;
-    left: -8px;
-  }
-
-  .tigerPaw {
-    width: 20px;
-    top: 169px;
-    left: 54%;
-  }
-
-  .table {
-    top: 25px;
-    right: -67px;
-  }
-
-  .elphe {
-    top: 54px;
-    right: -12%;
-  }
-
-  .elphepaw {
-    width: 22px;
-    top: 91px;
-  }
-
-  .boatBtn {
-    font-size: 12px;
-    padding: 0;
-  }
-
-  .aboutUsImageWrapper {
-    width: 26%;
-  }
-
-  .aboutUsSection {
-    top: 78%;
-    right: -506%;
-  }
-
-  .aboutUsImageWrapper {
-    width: 16%;
-  }
-
-  .aboutUsContent h2 {
-    font-size: 18px;
-  }
-
-  .aboutText {
-    font-size: 12px;
-  }
-
-  .readMore {
-    font-size: 12px;
-  }
-
-  .para1SVG {
-    font-size: 4rem;
-  }
-
-  .para2SVG {
-    font-size: 26px;
-  }
-
-  .caveText {
-    top: 46%;
-    left: 52%;
-  }
-
-  .caveText2 {
-    top: 57%;
-    left: 51%;
-  }
-}
