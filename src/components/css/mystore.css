@@ -1,0 +1,766 @@
+.characters {
+  background-image: url('../../assets/Characters/2x/Assetnew 288@2x-min.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  margin-top: 10rem;
+}
+
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;   /* 💥 gap fix */
+}
+
+
+body {
+  scroll-behavior: smooth;
+}
+
+.sceneWrapper {
+  position: relative;
+  min-height: 350vh;/* jitna tumhare content ka size hai */
+  width: 100%;
+}
+
+
+
+/* TREES WRAPPER */
+.trees {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1400px;          /* matches main container */
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Tree Image (fixed size so ALL screens same look) */
+.tree1 {
+  width: 1900px;          /* adjust if needed */
+  height: auto;
+  margin-left: -260px;    /* fine adjustment */
+  pointer-events: none;
+ 
+}
+
+
+/* ------ BUTTONS ------ */
+
+.monkeybutton {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  pointer-events: auto;
+}
+
+.monkeybutton img {
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ⭐ CENTER BOARD ⭐ */
+.Board {
+  position: absolute;
+  top: 36vh;
+  left: 62%;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.Board img {
+  width: 58vw;
+  max-width: 1200px;
+  height: auto;
+}
+
+.Birdonboard {
+  position: absolute;
+  top: -1.5vh;
+  left: 12%;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.Birdonboard img {
+  width: 8vw;
+  max-width: 100px;
+  height: auto;
+  left: 40vh;
+}
+
+.Boardbtn {
+  position: absolute;
+  top: 10vh;
+  left: -10%;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.Boardbtn img {
+  width: 1.4vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+.Elephantbtn {
+  position: absolute;
+  top: 62vh;
+  left: 60vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.Elephantbtn img {
+  width: 3vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+
+
+
+
+/* ⭐ ANIMALS GROUP ⭐ */
+.animals {
+  position: absolute;
+  top: 40vw;
+  /* overall group ki height adjust karo */
+  left: 7vw;
+  /* screenshot jaisa left side */
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5vw;
+  z-index: 40;
+}
+
+/* Each animal */
+.animals img {
+  height: 50vh;
+  /* screen ke hisab se responsive */
+  width: auto;
+
+}
+
+.animalbtn1 {
+  position: absolute;
+  top: 31vh;
+  left: 28vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.animalbtn1 img {
+  width: 1.7vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+.animalbtn2 {
+  position: absolute;
+  top: 29vh;
+  left: 50vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.animalbtn2 img {
+  width: 1.7vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+.animalbtn3 {
+  position: absolute;
+  top: 40vh;
+  left: 15vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.animalbtn3 img {
+ width: 1.7vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+.animalbtn4 {
+  position: absolute;
+  top: 43vh;
+  left: 40vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.animalbtn4 img {
+ width: 1.7vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+
+
+
+/* =========================
+   WALL + TREE WITH ANIMAL
+   ========================= */
+/* MAIN WRAPPER */
+.wall_tree {
+  position: absolute;
+  top: 69vw;
+  display: flex;
+  align-items: flex-end;
+  gap: 20vw;
+  z-index: 35;
+  padding-top: 3rem;
+}
+
+/* LEFT SIDE WALL */
+
+.wall {
+  position: absolute;
+  top:3.7vh;
+  left: 31vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+.wall img {
+  height: 62vh;
+  width: auto;
+  
+}
+
+.Birdonwall {
+  position: absolute;
+  top:-7.5vh;
+  left: 37vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.Birdonwall img {
+  width: 9vw;
+  max-width: 100px;
+  height: auto;
+  left: 40vh;
+}
+
+.wallbtn {
+  position: absolute;
+  top: 3vh;
+  left: -2vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.wallbtn img {
+  width: 1.5vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+.Wallanimalbtn1{
+  position: absolute;
+  top: 58vh;
+  left: 26vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.Wallanimalbtn1 img {
+  width: 2vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+.Wallanimalbtn2{
+  position: absolute;
+  top: 67vh;
+  left: 38vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.Wallanimalbtn2 img {
+  width: 2vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+
+
+/* RIGHT SIDE BLOCK */
+.treeBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Land center me tree ke niche aayega */
+}
+
+/* TREE */
+
+.treewithanimal{
+  position: absolute;
+  top: -50vh;
+  left: 155vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+.treewithanimal img {
+  height: 118vh;
+  width: auto;
+  margin-bottom: 0;
+}
+
+
+
+
+.treeanimalbtn2 {
+  position: absolute;
+  top: 47vh;
+  left: 85vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.treeanimalbtn2 img {
+  width: 1.7vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+.treeanimalbtn1 {
+  position: absolute;
+  top: 80vh;
+  left: 60vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.treeanimalbtn1 img {
+  width: 1.7vw;
+  max-width: 50px;
+  height: auto;
+  left: 40vh;
+}
+
+
+
+
+/* ======================
+   RIVER SPLIT SECTION
+   ====================== */
+
+.riverSection {
+  position: relative;
+  width: 100%;
+  height: 140vh;
+  /* screenshot jaisa bada area */
+  display: flex;
+  overflow: hidden;
+  top: 185vh;
+  align-items: center;
+}
+
+/* LEFT SIDE – River Image */
+/* Outer wrapper */
+.leftWrapper {
+  position: relative;
+  width: 45%;
+  height: 100%;
+}
+
+/* River image container */
+.riverContainer {
+  width: 100%;
+  height: 100%;
+  margin-left: 49vh;
+
+}
+
+.riverContainer img {
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+
+}
+
+/* OBJECTS OVER RIVER */
+.riverObjects {
+  position: absolute;
+  top: 0;
+  left: 40vh;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* images click na karein */
+}
+
+/* Example object positions */
+.riveranimal1 {
+  position: absolute;
+  top: 10%;
+  left: 32%;
+  width: 12vh;
+}
+
+.riveranimal1 img {
+  width: 100%;
+  height: auto;
+}
+
+.riveranimal2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 10vh;
+}
+
+.riveranimal2 img {
+  width: 100%;
+  height: auto;
+}
+
+.frogbtn {
+  position: absolute;
+  top: 37vh;
+  left: 20vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.frogbtn img {
+  width: 1vw;
+  max-width: 35px;
+  height: auto;
+  left: 40vh;
+}
+
+
+.foxbtn {
+  position: absolute;
+  top: 32vh;
+  left: 20vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.foxbtn img {
+  width: 1vw;
+  max-width: 35px;
+  height: auto;
+  left: 40vh;
+}
+
+
+.Deerbtn {
+  position: absolute;
+  top: 32vh;
+  left: 16vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.Deerbtn img {
+  width: 1vw;
+  max-width: 35px;
+  height: auto;
+  left: 40vh;
+}
+
+.Lionbtn {
+  position: absolute;
+  top: 10vh;
+  left: 9vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.Lionbtn img {
+  width: 1vw;
+  max-width: 35px;
+  height: auto;
+  left: 40vh;
+}
+
+
+.partyani1 {
+  position: absolute;
+  top: 47vh;
+  left: -2vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.partyani1 img {
+  width: 1vw;
+  max-width: 25px;
+  height: auto;
+  left: 40vh;
+}
+
+
+.partyani2 {
+  position: absolute;
+  top: 49vh;
+  left: 32vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.partyani2 img {
+  width: 1vw;
+  max-width: 25px;
+  height: auto;
+  left: 40vh;
+}
+
+
+.partyani3 {
+  position: absolute;
+  top: 23vh;
+  left: 56vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.partyani3 img {
+  width: 1vw;
+  max-width: 35px;
+  height: auto;
+  left: 40vh;
+}
+
+.partyani4 {
+  position: absolute;
+  top: 45vh;
+  left: 64vh;
+  transform: translateX(-50%);
+  z-index: 25;
+}
+
+.partyani4 img {
+  width: 1vw;
+  max-width: 25px;
+  height: auto;
+  left: 40vh;
+}
+
+
+
+/* ============================
+   FISH ONLY — CLEAN RESPONSIVE
+   ============================ */
+
+.fish1,
+.fish2,
+.fish3 {
+  position: absolute;
+  z-index: 5;
+  /* river ke upar dikhne ke liye */
+}
+
+.fish1 img,
+.fish2 img,
+.fish3 img {
+  width: 12vh;
+  /* responsive based on height */
+  height: auto;
+}
+
+/* ============================
+       INDIVIDUAL FISH POSITIONS
+   ============================ */
+
+.fish1 {
+  top: 60%;
+  left: 33%;
+}
+
+.fish2 {
+  top: 70%;
+  left: 35%;
+}
+
+.fish3 {
+  top: 80%;
+  left: 35%;
+}
+
+
+
+
+
+
+
+/* RIGHT SIDE – Green background */
+.right {
+  width: 55%;
+
+}
+
+.boll {
+  position: absolute;
+  top: 15px;
+  left: 90vh;
+  height: 19vh;
+  z-index: 40;
+ 
+
+}
+
+.boll img {
+  height: 100%;
+  width: auto;
+   z-index: 55;
+}
+
+/* ------------------------- */
+
+.frog {
+  position: absolute;
+  top: 8vh;
+  left: 8px;
+  height: 45vh;
+  /* jitna height chaho */
+}
+
+.frog img {
+  height: 100%;
+  width: auto;
+}
+
+/* ------------------------- */
+
+.fox {
+  position: absolute;
+  top: 200px;
+  right: 105vh;
+  height: 40vh;
+}
+
+.fox img {
+  height: 100%;
+  width: auto;
+}
+
+/* ------------------------- */
+
+.Deer {
+  position: absolute;
+  top: 6vh;
+  left: 121vh;
+  height: 40vh;
+  z-index: 40;
+}
+
+.Deer img {
+  height: 100%;
+  width: auto;
+}
+
+
+.Birdonstone {
+  position: absolute;
+  top: 58vh;
+  left: 141vh;
+  height: 12vh;
+  z-index: 40;
+}
+
+.Birdonstone img {
+  height: 100%;
+  width: auto;
+}
+
+
+.QueenBird {
+  position: absolute;
+  top: -12vh;
+  left: -3vh;
+  height: 18vh;
+}
+
+.QueenBird img {
+  height: 100%;
+  width: auto;
+}
+
+
+.QueenBirdBtn {
+  position: absolute;
+  top: 7vh;
+  left: -3vh;
+  height: 4vh;
+}
+
+.QueenBirdBtn img {
+  height: 100%;
+  width: auto;
+}
+
+/* ------------------------- */
+
+.lion {
+  position: absolute;
+  top: 60vh;
+  height: 60vh;
+  left: -4vh;
+}
+
+.lion img {
+  height: 100%;
+  width: auto;
+}
+
+/* ------------------------- */
+
+.party {
+  position: absolute;
+  top: 85vh;
+  left: 40vh;
+  height: 55vh;
+}
+
+.party img {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
