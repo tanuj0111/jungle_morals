@@ -1,0 +1,33 @@
+.mountain {
+  position: absolute;
+  top: 260px;
+  width: 100%;
+  height: 1230px;
+  left: 16%;
+  z-index: 2;
+}
+.boardContainer {
+  position: absolute;
+  top: 86%; 
+  left: 86%; 
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+.board {
+  width: 350px; 
+  height: auto;
+}
+
+.boardText {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}

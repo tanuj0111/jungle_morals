@@ -1,0 +1,168 @@
+.footerMain {
+  width: 120%;
+  position: relative;
+  margin-top: 0;
+  top: 0px;
+  bottom: 0px;
+  margin-left: -350px;
+}
+
+.footerBgWrapper {
+  position: relative;
+  width: 100%;
+  z-index: 20;
+  top: 0px;
+  margin-top: 0;
+}
+
+.footerBg {
+  width: 100%;
+  display: block;
+  z-index: 12;
+  top: 0px;
+  margin-top: 0;
+}
+
+.footerLinks {
+  position: absolute;
+  bottom: 40px;
+  right: 360px;
+  display: flex;
+  flex-direction: row;
+  gap: 140px;
+  z-index: 20;
+}
+
+.footerLinks button {
+  background: transparent;
+  border: none;
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.footerLinks button::after {
+  content: "|";
+  color: white;
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.footerLinks button:last-child::after {
+  content: "";
+}
+
+@media(max-width:2472px) {
+  .footerMain {
+    width: 120%;
+    position: relative;
+    margin-top: 0;
+    top: 26px;
+  }
+
+  .footerLinks {
+    right: 265px;
+    gap: 120px;
+  }
+}
+
+@media(max-width:2430px) {
+  .footerMain {
+    top: 42px;
+  }
+}
+
+@media(max-width:2390px) {
+  .footerMain {
+    top: 92px;
+  }
+}
+
+@media(max-width:2360px) {
+  .footerLinks {
+    right: 200px;
+    gap: 116px;
+    bottom: 5px;
+  }
+}
+
+@media(max-width:1440px) and (min-width:1025px) {
+  .footerBg {
+    margin-top: 274px;
+  }
+
+  .footerMain {
+    width: 100%;
+    margin-left: 1px;
+    margin-top: 354px;
+  }
+
+  .footerLinks {
+    bottom: 20px;
+    right: 75px;
+    gap: 70px;
+  }
+
+  .footerLinks button {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  .footerMain {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .footerLinks {
+    right: 20px;
+    bottom: 18px;
+    gap: 120px;
+  }
+
+  .footerLinks button {
+    font-size: 22px;
+  }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+  .footerMain {
+    width: 100%;
+    top: 44px;
+    margin-left: 0px;
+  }
+
+  .footerLinks {
+    bottom: 16px;
+    right: 40px;
+    gap: 56px;
+  }
+
+  .footerLinks button {
+    font-size: 20px;
+  }
+
+}
+
+@media(min-width:376px) and (max-width:425px) {
+  .footerMain {
+    width: 100%;
+    top: 26px;
+    margin-left: 0px;
+  }
+
+  .footerLinks {
+    bottom: 3px;
+    right: -3px;
+    gap: 38px;
+  }
+
+  .footerLinks button {
+    font-size: 12px;
+  }
+}
