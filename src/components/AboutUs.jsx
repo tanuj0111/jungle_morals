@@ -1,159 +1,163 @@
 import React from "react";
 import Navbar from "./Navbar";
-import "./AboutUs.css";
+import styles from "./AboutUs.module.css";
+
 import paper from "../assets/Light aboutus_img/Asset 17.webp";
 import rock from "../assets/Light aboutus_img/Asset 16.webp";
+import tboard from "../assets/Light aboutus_img/Asset 14.webp";
+import pillar1 from "../assets/Light aboutus_img/Asset 21.webp";
+import pillar2 from "../assets/Light aboutus_img/Asset 20.webp";
+import pillar3 from "../assets/Light aboutus_img/Asset 18.webp";
+import small_rock from "../assets/Light aboutus_img/Asset 19.webp";
+import big_rock from "../assets/Light aboutus_img/Asset 15.webp";
+import l_grass from "../assets/Light aboutus_img/Asset 12.webp";
+import r_grass from "../assets/Light aboutus_img/Asset 13.webp";
+import intro from "../assets/Light aboutus_img/Intro.mp4";
+import side from "../assets/Light aboutus_img/Asset 24.webp";
+import frame from "../assets/Light aboutus_img/Asset 22.webp";
+// import grass from "../assets/Light aboutus_img/Asset +25.webp";
 
-import tboard from "../assets/Light aboutus_img/Asset 14.webp"
-import pillar1 from "../assets/Light aboutus_img/Asset 21.webp"
-import pillar2 from "../assets/Light aboutus_img/Asset 20.webp"
-import pillar3 from "../assets/Light aboutus_img/Asset 18.webp"
-import small_rock from "../assets/Light aboutus_img/Asset 19.webp"
-import big_rock from "../assets/Light aboutus_img/Asset 15.webp"
-import l_grass from "../assets/Light aboutus_img/Asset 12.webp"
-import r_grass from "../assets/Light aboutus_img/Asset 13.webp"
-import intro from "../assets/Light aboutus_img/Intro.mp4"
-import side from "../assets/Light aboutus_img/Asset 24.webp"
-import Footer from "./Footer";
-// import lion from "../assets/webp/lion.webp";
-// import elephant from "../assets/webp/elephant.webp";
-// import main_bg from "../assets/About_img/Asset 25.svg"
+// import Footer from "./Footer";
 
 function AboutUs() {
-
-
-
     return (
-        <div className="about-page">
+        <>
             <Navbar />
 
-            <div className="b_p">
-                <div className="board">
-                    <img src={l_grass} className="l_grass" alt="left grass" />
-                    <img src={r_grass} className="r_grass" alt="right grass" />
-                    <div className="video-wrapper">
-                        <video width="100%" controls playsInline>
+
+            <div className={styles.aboutpage}>
+
+                <div className={styles.firstsec}>
+
+                    <div className={styles.frame}>
+                        <img src={r_grass} alt="" srcset="" className={styles.rightgrass} />
+                        <img src={frame} alt="" srcset="" className={styles.videoframe} />
+                        <video width="100%" controls muted playsInline className={styles.video}>
                             <source src={intro} type="video/mp4" />
-                            Your browser does not support the video tag.
                         </video>
+                        <img src={l_grass} alt="" srcset="" className={styles.leftgrass} />
                     </div>
+
+
+                    <div className={styles.paper}>
+
+                        <img src={paper} alt="" className={styles.textpaper} />
+                        <img src={rock} alt="" className={styles.rockstone} />
+                        <img src={side} alt="" className={styles.sidegrass} />
+                        <p className={`font-brandon ${styles.text}`}>
+                            At <strong> Jungle Morals,</strong> we believe every child<br />
+                            deserves stories that make their<strong> hearts grow.</strong><br />
+                            We create fun, engaging, research-backed<br />
+                            content that nurtures emotional intelligence,<br />
+                            <strong>kindness,</strong> and <strong> confidence</strong> in children.<br />
+                            Through lovable characters, catchy songs,<br />
+                            and relatable stories, we help kids learn<br />
+                            <strong>empathy, resilience, and responsibility—</strong><br />
+                            while giving parents a safe, meaningful<br />
+                            alternative to passive screen time.<br />
+                            <strong>Jungle Morals</strong> reimagines the screen<br />
+                            as a place where <strong> families can build</strong><br />
+                            values together, spark conversations that<br />
+                            matter, and connect through stories<br />
+                            <strong> filled with warmth and purpose.</strong>
+                        </p>
+                    </div>
+
                 </div>
-
-                <div className="side">
-                    <img src={side} className="mount_img" alt="side mounntain" />
-                    <img src={paper} className="paper_img" alt="paper decoration" />
-                    <p className="font-brandon-regular">At <span className="font-brandon-bold">Jungle Morals,</span> we believe every child <br /> deserves stories that make their <span className="font-brandon-bold">hearts grow.</span> <br /> We create fun, engaging, research-backed <br /> content that nurtures emotional intelligence, <br /> <span className="font-brandon-bold">kindness,</span> and <span className="font-brandon-bold">confidence</span> in children. <br /> Through lovable characters, catchy songs, <br /> and relatable stories, we help kids learn <br /> <span className="font-brandon-bold">empathy, resilience, and responsibility—</span> <br /> while giving parents a safe, meaningful <br /> alternative to passive screen time. <br /> <span className="font-brandon-bold">Jungle Morals</span> reimagines the screen <br />
-                        as a place where <span className="font-brandon-bold">families can build</span><br /> values together, spark conversations that <br /> matter, and connect through stories <br /> <span className="font-brandon-bold">filled with warmth and purpose.</span> </p>
-
+                <div className={styles.secondsec}>
+                    <img src={tboard} alt="" className={styles.tboard} />
+                    <h1 className={`font-adventuring ${styles.tboardtext}`}>Brand Pillars</h1>
+                    <img src={pillar1} alt="pillar1" className={styles.pillar1} />
+                    <h2 className={`font-adventuring ${styles.pillar1text1}`}>Core Values </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar1text2}`}>
+                        <strong>Integrity -</strong>  <br />
+                        Honesty and <br />
+                        Moral clarity.
+                    </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar1text3}`}>
+                        <strong>Empathy</strong> - <br />
+                        Kindness at the <br />
+                        heart of every <br />
+                        interaction.
+                    </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar1text4}`}>
+                        <strong>Creativity</strong> <br />
+                        Bold, imaginative <br />
+                        storytelling.
+                    </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar1text5}`}>
+                        <strong>Inclusivity</strong> - <br />
+                        Diverse <br />
+                        characters, <br />
+                        cultures, <br />
+                        and situations.
+                    </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar1text6}`}>
+                        <strong>Impact</strong> - <br />
+                        Entertainment <br />
+                        with educational <br />
+                        and social <br />
+                        benefits.
+                    </h2>
+                    <img src={pillar2} alt="pillar2" className={styles.pillar2} />
+                    <h2 className={`font-adventuring ${styles.pillar2text1}`}>Brand Personality </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar2text2}`}>
+                        <strong>Playful</strong> <br />
+                        <strong>Teacher</strong> -<br />
+                        Wise but <br />
+                        approachable
+                    </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar2text3}`}>
+                        <strong>Cheer-Leader</strong><br />
+                        Celebrates<br />
+                        every child's<br />
+                        potential </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar2text4}`}>
+                        <strong>Adventurer</strong> - <br />
+                        Curious and <br />
+                        bold
+                    </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar2text5}`}>
+                        <strong>Friend</strong> <br />
+                        <strong>And Guide</strong>- <br />
+                        Relatable, <br />
+                        never preachy
+                    </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar2text6}`}>
+                        <strong>Nurturer</strong> – <br />
+                        Calm, <br />
+                        comforting, <br />
+                        and emotionally <br />
+                        safe
+                    </h2>
+                    <img src={pillar3} alt="pillar3" className={styles.pillar3} />
+                    <h2 className={`font-adventuring ${styles.pillar3text1}`}>The purpose </h2>
+                    <h2 className={`.font-brandon  ${styles.pillar3text2}`}>
+                        To <strong>inspire</strong> growing <br />
+                        young minds <br />
+                        through engaging, <br />
+                        <strong>value- driven</strong> <br />
+                        content that <br />
+                        <strong>nurture empathy</strong>, <br />
+                        curiosity, and <br />
+                        positive <br />
+                        character traits <br />
+                        — <strong>building</strong> a <br />
+                        generation of <br />
+                        kind, confident <br />
+                        social responsible <br />
+                        individuals who <br />
+                        lead with <strong>courage</strong> <br />
+                        and <strong>heart</strong> and <br />
+                        make the world <br />
+                        a better place.
+                    </h2>
+                    <img src={big_rock }alt="big rock" className={styles.big_rock} />
+                    <img src={small_rock} alt="small rock" className={styles.small_rock} />
                 </div>
             </div>
-
-            <div className="main">
-
-                <div className="rock">
-                    <img src={rock} alt="" />
-                </div>
-
-
-                <div className="pillars_bg">
-                    <div className="pillars_container">
-                        <div className="heading">
-                            <img src={tboard} className="tboard" alt="board" />
-                            <h2 className="font-adventuring">Brand Pillars</h2>
-                        </div>
-                        <div className="pillars">
-                            <div className="pillar_box">
-                                <img src={pillar1} className="pillar_img" alt="pillar - core values" />
-                                <h3 className="font-adventuring pillar_heading1">Core Values</h3>
-                                <div className="pillar_text">
-                                    <span className="font-brandon-bold box_1">Integrity-</span>
-                                    <p className="font-brandon-regular line_1">Honesty and Moral clarity.</p>
-                                    {/* Second line */}
-                                    <span className="font-brandon-bold box_2">Empathy-</span>
-                                    <p className="font-brandon-regular line_2">Kindness at the heart of every interaction.</p>
-                                    {/* Third line */}
-                                    <span className="font-brandon-bold box_3">Creativity-</span>
-                                    <p className="font-brandon-regular line_3">Bold, imaginative storytelling.</p>
-                                    {/* Fourth line */}
-                                    <span className="font-brandon-bold box_4">Inclusivity-</span>
-                                    <p className="font-brandon-regular line_4">Diverse characters, cultures, and situations.</p>
-                                    {/* Fifth line */}
-                                    <span className="font-brandon-bold box_5">Impact-</span>
-                                    <p className="font-brandon-regular line_5">Entertainment with educational and social benefits.</p>
-                                </div>
-                            </div>
-
-                            <div className="pillar_box">
-                                <img src={pillar2} className="pillar_img" alt="pillar - personality" />
-                                <h3 className="font-adventuring pillar_heading2">Brand Personality</h3>
-                                <div className="pillar_text">
-                                    <span className="font-brandon-bold boxTwo_1">Playful</span>
-                                    <p className="font-brandon-bold boxTwo_1_2">Teacher-</p>
-                                    <p className="font-brandon-regular lineTwo_1">Wise but</p>
-                                    <p className="font-brandon-regular lineTwo_2">approachable</p>
-                                    {/* Second line */}
-                                    <div className="font-brandon-bold box_2_text">
-                                        <span>Cheer-</span>
-                                        <span>Leader-</span>
-                                    </div>
-                                    <p className="font-brandon-regular box_2_line_2">Celebrates every child's potential</p>
-                                </div>
-                                <span className="font-brandon-bold box2_line3">Adventurer-</span>
-                                <p className="font-brandon-regular box_2_line_3">Curious and bold</p>
-                                {/* Three line */}
-                                <span className="font-brandon-bold box_2sp_2">Friend <p>And Guide-</p></span>
-                                <p className="font-brandon-regular box_2_p_2">Relatable,</p>
-                                <p className="font-brandon-regular box_2_last">never preachy</p>
-                                {/* Fourth line */}
-                                <div className="box_2_part">
-                                    <span className="font-brandon-bold">Nurturer –</span>
-                                </div>
-                                <p className="font-brandon-regular box_2line_4">Calm, </p>
-                                <p className="font-brandon-regular box_2line_5">comforting, </p>
-                                <p className="font-brandon-regular box_2last">and emotionally safe</p>
-                            </div>
-
-                            <div className="pillar_box">
-                                <img src={pillar3} className="pillar2" alt="pillar - purpose" />
-                                <h3 className="font-adventuring pillar_heading1">The Purpose</h3>
-                                <div className="pillar_text">
-                                    <p className="font-brandon-regular box_3_1">To <span className="font-brandon-bold">inspire</span> growing</p>
-                                    <p className="font-brandon-regular box_3_1_2">young minds through engaging,</p>
-                                    <div className="font-brandon-bold s_2">
-                                        <span>value- </span>
-                                        <span>driven</span>
-                                    </div>
-                                    {/* {Second Line} */}
-                                    <p className="font-brandon-regular box_3_2">content that</p>
-                                    <div className="font-brandon-bold box_2_span">
-                                        <span>nurture  </span>
-                                        <span>empathy,</span>
-                                    </div>
-                                    <p className="font-brandon-regular box_3line">curiosity, and positive</p>
-                                    <p className="font-brandon-regular box_3line_2">character traits</p>
-                                    <p className="font-brandon-regular box_3line_3"><span className="font-brandon-bold">— building</span> a</p>
-                                    {/* {Thid Line} */}
-                                    <p className="font-brandon-regular box_3_3">generation of kind, confident</p>
-                                    <p className="font-brandon-regular box_3_3line">social responsible individuals who</p>
-                                    {/* {Fourth Line} */}
-                                    <p className="font-brandon-regular box_3_4">lead with <span className="font-brandon-bold">courage</span></p>
-                                        <p className="font-brandon-regular box_3_4line">and <span className="font-brandon-bold">heart</span> and</p>
-                                         <p className="font-brandon-regular box_3line_4">make the world a better place.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <img src={small_rock} className="sm_rock" alt="small rock" />
-                        </div>
-                        <div>
-                            <img src={big_rock} className="b_rock" alt="Big Rock" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <Footer/>
-        </div>
-
+            {/* <Footer /> */}
+        </>
     );
 }
 

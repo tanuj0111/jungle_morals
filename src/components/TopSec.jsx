@@ -4,10 +4,8 @@ import mountain from "../assets/webp/mountain.webp";
 import tree from "../assets/SVG/greentree.png";
 
 import interactives from "../assets/SVG/interactives.png";
-import jingles from "../assets/SVG/jingles.png";
-import stories from "../assets/SVG/stories.png";
-
-
+import jingles from "../assets/SVG/Jingles.png";
+import stories from "../assets/SVG/Stories.png";
 
 
 import treebottomgrass from "../assets/webp/treebottomgrass.webp";
@@ -67,15 +65,15 @@ export default function TopSec() {
         <img src={tree} alt="Tree" className={styles.tree} />
 
         <div className={styles.treeLinks}>
-          <a href="/jingles" className={styles.jingles}>
+          <a href="https://www.youtube.com/watch?v=3iG5o0c91TI" target="_blank" rel="noopener noreferrer" className={styles.jingles}>
           <img src={jingles} alt="" srcset="" />
           <h3>jingles</h3>
           </a>
-          <a href="/interactives" style={{ fontSize: '2rem' }} className={styles.interactive}>
+          <a href="https://www.youtube.com/watch?v=qBLoZ7VhLJ4" target="_blank" rel="noopener noreferrer" style={{ fontSize: '2rem' }} className={styles.interactive}>
           <img src={interactives} alt="" srcset="" />
            <h3>interactives</h3>
           </a>
-          <a href="/stories" className={styles.stories}>
+          <a href="https://www.youtube.com/watch?v=iWtCPoACiKI" target="_blank" rel="noopener noreferrer" className={styles.stories}>
           <img src={stories} alt="" srcset="" />
            <h3>stories</h3>
 

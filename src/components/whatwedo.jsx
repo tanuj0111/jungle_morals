@@ -53,7 +53,6 @@ import parent1 from '../assets/What We Do Page Assests/Activity Card/Parents_1.p
 import parent2 from '../assets/What We Do Page Assests/Activity Card/Parents_2.png'
 
 
-
 // Image to display in modal when info icons are clicked
 function Whatwedo() {
     // Popover anchored beside clicked info icon

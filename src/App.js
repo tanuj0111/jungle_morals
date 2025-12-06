@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './components/Home';
+// import Home from './components/Home';
 import WhatWeDo from './components/whatwedo.jsx';
 import Characters from './components/Characters.jsx';
 import TopSec from './components/TopSec.jsx';
