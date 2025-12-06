@@ -179,11 +179,41 @@ body {
   transform: scale(1.1);
 }
 
+/* Modal/backdrop for centered character boards */
+.backdropLayer {
+  position: fixed;
+  inset: 0;
+  background: rgba(244, 238, 238, 0.741);
+  backdrop-filter: blur(6px);
+  z-index: 3000;
+}
+
+.centerModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3001;
+  display: grid;
+  place-items: center;
+}
+
+.centerImg {
+  max-width: min(860px, 90vw);
+  max-height: 86vh;
+  height: auto;
+  display: block;
+  /* filter: drop-shadow(0 10px 24px rgba(0,0,0,0.35)); */
+  border-radius: 12px;
+}
+
 /* ===== CENTER BOARD ===== */
 .Board {
   position: absolute;
   top: 375px;
   left: 870px;
+  /* border: black solid 1px; */
+z-index: 400;
   transform: translateX(-50%);
   z-index: 25;
 }
@@ -198,6 +228,8 @@ body {
   top: -23px;
   left: 50px;
   z-index: 26;
+  /* border: black solid 1px; */
+
 }
 
 .Birdonboard>img {
@@ -227,12 +259,18 @@ body {
   top: 550px;
   left: 500px;
   cursor: pointer;
+  pointer-events: auto;
+  /* border: black solid 1px; */
+  z-index: 48;
 }
 
 .Elephantbtn img {
   width: 38px;
   height: auto;
+  /* border: black solid 1px; */
+z-index: 48;
   transition: transform 0.2s;
+  pointer-events: auto;
 }
 
 .Elephantbtn img:hover {
@@ -245,6 +283,7 @@ body {
   top: 700px;
   left: 48px;
   z-index: 40;
+  /* border: black solid 1px; */
 }
 
 .animals>img {
@@ -260,7 +299,7 @@ body {
 }
 
 .animalbtn1 img {
-  width: 18px;
+  width: 25px;
   height: auto;
   transition: transform 0.2s;
 }
@@ -277,7 +316,7 @@ body {
 }
 
 .animalbtn2 img {
-  width: 18px;
+  width: 25px;
   height: auto;
   transition: transform 0.2s;
 }
@@ -294,7 +333,7 @@ body {
 }
 
 .animalbtn3 img {
-  width: 18px;
+  width: 25px;
   height: auto;
   transition: transform 0.2s;
 }
@@ -311,7 +350,7 @@ body {
 }
 
 .animalbtn4 img {
-  width: 18px;
+  width: 25px;
   height: auto;
   transition: transform 0.2s;
 }
@@ -325,7 +364,7 @@ body {
   position: absolute;
   top: 1200px;
   width: 100%;
-  z-index: 35;
+  z-index: 0;
 }
 
 .wall {
@@ -407,6 +446,9 @@ body {
   position: absolute;
   top: -490px;
   left: 550px;
+  /* border: black solid 1px; */
+  z-index: -0;
+
 }
 
 .treewithanimal {
@@ -455,6 +497,7 @@ body {
 /* ===== RIVER SECTION ===== */
 .riverSection {
   position: absolute;
+  /* border:  black solid 1px; */
   width: 100%;
   height: 1372px;
   top: 1850px;
@@ -679,9 +722,11 @@ body {
 
 .foxbtn {
   position: absolute;
+  /* border:black solid 1px; */
   top: 310px;
   left: 165px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .foxbtn img {
@@ -792,6 +837,8 @@ body {
 }
 
 .party {
+  /* border: black solid 1px; */
+z-index: 50;
   position: absolute;
   top: 907px;
   left: 250px;
@@ -844,9 +891,11 @@ body {
 }
 
 .partyani3 img {
+  /* border: black solid 1px; */
   width: 30px;
   height: auto;
   transition: transform 0.2s;
+  z-index: 100;
 }
 
 .partyani3 img:hover {

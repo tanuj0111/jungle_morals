@@ -1,4 +1,176 @@
-/*
+/* Info 1 wrapper and caption */
+.imfo1Wrap {
+    position: absolute;
+    /* match the same positioning context as .imfo1 */
+}
+
+.imfo1Text {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.8);
+    color: #0f766e;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    z-index: 3002;
+}
+
+/* Popover image overlay caption */
+.popoverImgWrap {
+    position: relative;
+}
+
+.captionOverlay1 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 9px 28px;
+    border-radius: 8px;
+    font-size: 0.81rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}
+.captionOverlay2 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 9px 33px;
+    border-radius: 8px;
+    font-size: 0.81rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}.captionOverlay3 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 11px 41px;
+    border-radius: 8px;
+    font-size: 0.81rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}.captionOverlay4 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 10px 26px;
+    border-radius: 8px;
+    font-size: 0.81rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}.captionOverlay5 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 0.89rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}.captionOverlay6 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 9px 34px;
+    border-radius: 8px;
+    font-size: 0.81rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}.captionOverlay7 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 9px 30px;
+    border-radius: 8px;
+    font-size: 0.91rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}.captionOverlay8 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 9px 15px;
+    border-radius: 8px;
+    font-size: 0.89rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}.captionOverlay9 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.81rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}.captionOverlay10 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 9px 10px;
+    border-radius: 8px;
+    font-size: 0.89rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}.captionOverlay11 {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    /* background: rgba(255, 255, 255, 0.85); */
+    color: #0f766e;
+    text-align: center;
+    padding: 9px 10px;
+    border-radius: 8px;
+    font-size: 0.89rem;
+    line-height: 1;
+    max-width: 92%;
+    z-index: 1;
+}
+
+ /*
   WhatWeDo: fluid, breakpoint-light CSS for easy responsiveness.
   - CSS variables for quick tuning per component
   - Grid auto-fit for wrapping cards
@@ -17,7 +189,7 @@ body {
 }
 
 .wrapper {
-    background-image: url("../assets/What We Do Page Assests/2x/bgsky.png");
+    background-image: url("../assets/What We Do Page Assests/1x/bgsky.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -106,8 +278,8 @@ body {
 
 /* Centered modal variant for activity card */
 .popoverRootCentered {
-    top: 22%;
-    left: 28%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -119,22 +291,31 @@ body {
 
 /* Flip card for activity images */
 .flipCard {
-    width: fit-content;
+    width: 1000px; /* fixed card width for consistent pivot */
+    height: 400px; /* fixed card height */
     perspective: 1000px;
     cursor: pointer;
+    display: inline-block; /* ensure intrinsic box for centering */
 }
 
 .flipInner {
     position: relative;
     width: 100%;
+    height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.6s ease;
+    transform-origin: center center; /* flip around center */
 }
 
 .flipFront, .flipBack {
     position: absolute;
+    inset: 0; /* full overlay to keep same box */
     width: 100%;
+    height: 100%;
     backface-visibility: hidden;
+    transform-origin: center center; /* faces rotate around center */
+    display: grid;
+    place-items: center; /* keep images centered during flip */
 }
 
 .flipBack {
@@ -145,8 +326,16 @@ body {
     transform: rotateY(180deg);
 }
 
+/* Images inside flip faces should fit the fixed box */
+.flipFront img, .flipBack img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .popoverImg {
     display: block;
+    width: auto;
     max-width: min(360px, 42vw);
     height: auto;
 }
@@ -184,6 +373,8 @@ body {
     display: grid;
     place-items: center;
     margin-block-end: clamp(1rem, 2vw, 2rem);
+    position: relative;
+    top: -3rem;
 }
 
 .banner {
@@ -193,6 +384,14 @@ body {
     position: absolute;
     /* top: -17rem; */
     z-index: 6;
+}
+.title {
+    margin-top: 1rem;
+    font-size: clamp(2rem, 4.5vw, 3.6rem);
+    color: #0f766e;
+    text-align: center;
+    z-index: 6;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
 }
 
 .cardsRow {
@@ -226,6 +425,14 @@ body {
     width: auto;
     display: block;
 }
+.title1{
+    margin-top: 12.8rem;
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: #0f766e;
+    text-align: center;
+    z-index: 6;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
 
 .bird2 {
     height: 60vh;
@@ -234,6 +441,14 @@ body {
     width: auto;
     display: block;
 }
+.title2{
+    margin-top: 20.9rem;
+    font-size: clamp(1rem, 3vw, 1.8rem);
+    color: #0f766e;
+    text-align: center;
+    z-index: 6;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+} 
 
 .bird3 {
     height: 60vh;
@@ -242,8 +457,18 @@ body {
     width: auto;
     display: block;
 }
+.title3{
+    margin-top: 12.7rem;
+    font-size: clamp(1rem, 3vw, 1.9rem);
+    color: #0f766e;
+    text-align: center;
+    z-index: 6;
+    margin-left: -0.6vw;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+} 
+
 .textSection {
-    background-image: url("../assets/What We Do Page Assests/2x/bggrass.png");
+    background-image: url("../assets/What We Do Page Assests/1x/bggrass.png");
     background-size: cover;
     position: relative;
     top: 40vh;
@@ -268,101 +493,310 @@ body {
     width: auto;
     display: block;
 }
-.cow {
-    height: 80vh;
+.hippotext{
+    font-size: clamp(0.1rem, 2vw, 1.2rem);
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    z-index: 6;
     position: absolute;
-    top: 13rem;
-    left: 40rem;
+    top: 26.6rem;
+    left: 4.4rem;
+    width: 20rem;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
+/* .hippoin{
+    font-weight: bold;
+} */
+
+.hippotext2{
+    font-size: clamp(0.1rem, 2vw, 1.2rem);
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    top: 33.8rem;
+    left: 4.4rem;
+    width: 20rem;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
+
+.hippotext3{
+    font-size: clamp(0.1rem, 2vw, 1.2rem);
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    top: 44.1rem;
+    left: 4.4rem;
+    width: 20rem;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
+.cow {
+    height: 85vh;
+    position: absolute;
+    top: 12rem;
+    left: 38.5rem;
     width: auto;
     display: block;
 }
+ 
+ 
+.cowtext1{
+    font-size: clamp(0.1rem, 2vw, 1.2rem);
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    top: 27.2rem;
+    left: 38.5rem;
+    width: 20rem;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
+
+.cowtext2{
+    font-size: clamp(0.1rem, 2vw, 1.2rem);
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    top: 34.7rem;
+    left: 38.5rem;
+    width: 20rem;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
+
+.cowtext3{
+    font-size: clamp(0.1rem, 2vw, 1.2rem);
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    top: 41.7rem;
+    left: 38.5rem;
+    width: 20rem;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
 .elephant {
-    height: 90vh;
+    height: 95vh;
     position: absolute;
     top: 7rem;
-    right: 2rem;
+    right: -2rem;
     width: auto;
 
     display: block;
 }
+.elephanttext1{
+    font-size: clamp(0.1rem, 2vw, 1.2rem);
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    top: 25.5rem;
+    left: 73rem;
+    width: 20rem;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
+.elephanttext2{
+    font-size: clamp(0.1rem, 2vw, 1.2rem);
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    top: 33.4rem;
+    left: 73.3rem;
+    width: 20rem;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
+.elephanttext3{
+    font-size: clamp(0.1rem, 2vw, 1.2rem);
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    top: 41.6rem;
+    left: 73.3rem;
+    width: 20rem;
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.3); */
+}
+
 .oak {
     height: 100vh;
     position: absolute;
     top: 30rem;
-    /* left: 2rem; */
-    width: 100vw;
-    display: block;
+    /* left: -1rem; */
+    width: 103vw;
+    /* display: block; */
     z-index: -10;
-    right: 1vw;
+    right: 0vw;
+}
+
+.oaktext1{
+     font-size: clamp(0.1rem, 2vw, 1.6rem);
+    line-height: 2rem;
+    color:white;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    top: 51rem;
+    left: 30rem;
+}
+.oaktext2{
+     font-size: clamp(0.1rem, 2vw, 1.6rem);
+    line-height: 2.3rem;
+    color:white;
+    text-align: center;
+    z-index: 6;
+     /* border: black solid 1px; */
+    position: absolute;
+    top: 55.9rem;
+    left: 26rem;
+    /* width: 30rem; */
+}
+.oaktext3{
+     font-size: clamp(0.1rem, 2vw, 1.6rem);
+    line-height: 2.2rem;
+    color:white;
+    text-align: center;
+    z-index: 6;
+     /* border: black solid 1px; */
+    position: absolute;
+    top: 62rem;
+    left: 18rem;
+    /* width: 30rem; */
+}
+.oaktext4{
+     font-size: clamp(0.1rem, 2vw, 2rem);
+    line-height: 2rem;
+    color:white;
+    text-align: center;
+    z-index: 6;
+     /* border: black solid 1px; */
+    position: absolute;
+    top: 70rem;
+    font-weight: bolder;
+    left: 40rem;
+    /* width: 30rem; */
+}
+.activitycard {
+    height: 25vh;
+    position: absolute;
+    top: 72.5rem;
+    left: 31rem;
+    width: auto;
+    display: block;
+    z-index: 11;
+}
+.activitycardtitle {
+    font-size: clamp(0.1rem, 4vw, 3rem);
+    line-height: 2rem;
+    color:#0f766e;
+    text-align: center;
+    z-index: 12;
+    position: absolute;
+    top: 77rem;
+    left: 36rem;
 }
 .imfo1 {
-    height: 2vh;
+    height: 1.5vh;
     position: absolute;
-    top: 32rem;
-    left: 17rem;
+    top: 31.2rem;
+    left: 20.7rem;
     width: auto;
     display: block;
 }
 .imfo2 {
-    height: 2vh;
+    height: 1.5vh;
     position: absolute;
-    top: 39rem;
-    left: 17.3rem;
+    top: 41.5rem;
+    left: 20.7rem;
     width: auto;
     display: block;
 }
 .imfo3 {
-    height: 2vh;
+    height: 1.5vh;
     position: absolute;
-    top: 35rem;
-    left: 54.3rem;
+    top: 47.2rem;
+    left: 20rem;
     width: auto;
     display: block;
 }
 .imfo4 {
-    height: 1.7vh;
+    height: 1.5vh;
     position: absolute;
-    top: 29rem;
-    left: 85.7rem;
+    top: 32rem;
+    left: 51.9rem;
     width: auto;
     display: block;
 }
 .imfo5 {
-    height: 1.7vh;
+    height: 1.5vh;
     position: absolute;
-    top: 33.6rem;
-    left: 84.7rem;
+    top: 39.4rem;
+    left: 55.6rem;
     width: auto;
     display: block;
 }
 .imfo6 {
-    height: 1.7vh;
+    height: 1.5vh;
     position: absolute;
-    top: 44.5rem;
-    left: 82.7rem;
+    top: 48rem;
+    left: 51rem;
     width: auto;
     display: block;
 }
 .imfo7 {
-    height: 1.7vh;
+    height: 1.5vh;
     position: absolute;
-    top: 51.8rem;
-    left: 67.3rem;
+    top: 31.5rem;
+    left: 89.3rem;
     width: auto;
     display: block;
 }   
 .imfo8 {
-    height: 1.7vh;
+    height: 1.5vh;
     position: absolute;
-    top: 59.5rem;
-    left: 68rem;
+    top: 39.3rem;
+    left: 90.1rem;
     width: auto;
     display: block;
 }   
+.imfo9 {
+    height: 1.5vh;
+    position: absolute;
+    top: 47.7rem;
+    left: 86rem;
+    width: auto;
+    display: block;
+} 
+.imf10 {
+    height: 1.5vh;
+    position: absolute;
+    top: 53.2rem;
+    left: 67.4rem;
+    width: auto;
+    display: block;
+}
+.imf11 {
+    height: 1.5vh;
+    position: absolute;
+    top: 57.8rem;
+    left: 68.3rem;
+    width: auto;
+    display: block;
+}
 .activity1 {
     height: 50vh;
     position: absolute;
-    top: 65.8rem;
+    top: 72.5rem;
     left: 5rem;
     width: auto;
     display: block;
@@ -370,8 +804,8 @@ body {
 .activity2 {
     height: 45vh;
     position: absolute;
-    top: 74rem;
-    left: 34rem;
+    top: 82rem;
+    left: 35.5rem;
     width: auto;
     display: block;
     z-index: -11;
@@ -379,44 +813,65 @@ body {
 .activity3 {
     height: 50vh;
     position: absolute;
-    top: 65.5rem;
+    top: 72rem;
     left: 66rem;
     width: auto;
     display: block;
 }    
-.activity11 {
-    height: 12vh;
+.activitycardtitle1 {
+    font-size: clamp(0.1rem, 4vw, 2.3rem);
+    line-height: 2.5rem;
+    color:#ffffff;
+    text-align: center;
+    z-index: 12;
     position: absolute;
-    top: 89rem;
+   text-shadow: 4px 2px 1px rgb(2, 44, 18);
+    top: 96rem;
     left: 9rem;
-    width: auto;
 }
-.activity21 {
-    height: 12vh;
+.activitycardtitle2 {
+    font-size: clamp(0.1rem, 4vw, 2.3rem);
+    line-height: 2.5rem;
+    color:#ffffff;
+    text-align: center;
+    z-index: 12;
     position: absolute;
-    top: 95rem;
-    left: 38rem;
-    width: auto;
-    z-index: -11;
+   text-shadow: 4px 2px 1px rgb(2, 44, 18);
+    top: 104rem;
+    left: 39rem;
 }
-.activity31 {
-    height: 11vh;
+.activitycardtitle3 {
+    font-size: clamp(0.1rem, 4vw, 2rem);
+    line-height: 2.5rem;
+    color:#ffffff;
+    text-align: center;
+    z-index: 12;
     position: absolute;
-    top: 89rem;
-    left: 67.5rem;
-    width: auto;
+   text-shadow: 4px 2px 1px rgb(2, 44, 18);
+    top: 95.5rem;
+    left: 68rem;
+}
+.activitycardtitle4 {
+    font-size: clamp(0.1rem, 4vw, 2.2rem);
+    line-height: 2.5rem;
+    color:#0f766e;
+    text-align: center;
+    z-index: 12;
+    position: absolute;
+    top: 143.3rem;
+    left: 30rem;
 }
 .elephantcrew {
     height: 60vh;
     position: absolute;
-    top: 96rem;
+    top: 105rem;
     left: 4rem;
     width: auto;
 }
 .chess {
     height: 60vh;
     position: absolute;
-    top: 103rem;
+    top: 110rem;
     left: 33rem;
     width: auto;
     z-index: -11;
@@ -424,7 +879,7 @@ body {
 .dogs {
     height: 60vh;
     position: absolute;
-    top: 96rem;
+    top: 105rem;
     left: 70rem;
     width: auto;
     z-index: -11;
@@ -432,7 +887,7 @@ body {
 .infoboard {
     height: 20vh;
     position: absolute;
-    top: 130rem;
+    top: 140rem;
     left: 25rem;
     width: auto;
     z-index: -11;

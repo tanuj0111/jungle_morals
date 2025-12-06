@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Adventuring";
+  src: url("assets/fonts/Adventuring.ttf") format("truetype");
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family:"Brandon_regular";
+  src: url("assets/fonts/Brandon_regular.otf") format("opentype");
+}
+@font-face{
+  font-family: "Biscuit";
+  src : url("assets/fonts/Biscuit\ Glitch.ttf")
+}
+:root{
+  --font-adventuring: 'Adventuring', sans-serif;
+  --font-brandon: 'Brandon_regular', sans-serif;
+  --font-biscuit: 'Biscuit', sans-serif;
+}
+.font-adventuring {
+  font-family: var(--font-adventuring);
+}
+.font-brandon {
+  font-family: var(--font-brandon);
+}
+.font-biscuit {
+  font-family: var(--font-biscuit);
 }

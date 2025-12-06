@@ -70,7 +70,7 @@ function Navbar() {
               <Link to="/" className={`position-relative ${styles.homeCloud}`} style={{ display: 'block' }}>
                 <img src={cloud4} alt="cloud" className="position-absolute w-100 h-110 object-fit-contain" />
                 <div className={`position-absolute w-100 h-100 d-flex align-items-center justify-content-center`}>
-                  <span className={`${styles.homeCloudText}`} >
+                  <span className={`font-adventuring ${styles.homeCloudText}`} >
                     Home
                   </span>
                 </div>
@@ -81,7 +81,7 @@ function Navbar() {
               <div className={`position-relative ${styles.theWhyCloud}`}>
                 <img src={cloud2} alt="cloud" className="position-absolute w-100 h-120 object-fit-contain" />
                 <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                  <span className={`${styles.theWhyCloudText}`} style={{ color: "#0f766e" }}>
+                  <span className={`font-adventuring ${styles.theWhyCloudText}`} style={{ color: "#0f766e" }}>
                     The Why
                   </span>
                 </div>
@@ -92,7 +92,7 @@ function Navbar() {
               <Link to="/whatwedo" className={`position-relative ${styles.whatCloud}`} style={{ display: 'block' }}>
                 <img src={cloud1} alt="cloud" className="position-absolute w-100 h-110 object-fit-contain" />
                 <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                  <span className={`${styles.whatCloudText}`} style={{ color: "#0f766e" }}>
+                  <span className={`font-adventuring ${styles.whatCloudText}`} style={{ color: "#0f766e" }}>
                     What We Do
                   </span>
                 </div>
@@ -103,7 +103,7 @@ function Navbar() {
               <Link to="/characters" className={`position-relative ${styles.charactersCloud}`} style={{ display: 'block' }}>
                 <img src={cloud3} alt="cloud" className="position-absolute w-100 h-110 object-fit-contain" />
                 <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                  <span className={`${styles.charactersCloudText}`} style={{ color: "#0f766e" }}>
+                  <span className={` font-adventuring ${styles.charactersCloudText}`} style={{ color: "#0f766e" }}>
                     Characters
                   </span>
                 </div>
@@ -115,8 +115,8 @@ function Navbar() {
               <Link to="/about" className={`position-relative ${styles.emptyCloud}`} style={{ display: 'block' }}>
                 <img src={cloud5} alt="cloud" className="position-absolute w-100 h-100  object-fit-contain" />
                 <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                  <span className={`${styles.aboutCloudText}`} style={{ color: "#0f766e" }}>
-                    Aboutus
+                  <span className={` font-adventuring ${styles.aboutCloudText}`} style={{ color: "#0f766e" }}>
+                    About Us
                   </span>
                 </div>
               </Link>

@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from "react";
 import styles from "./TopSec.module.css";
 import mountain from "../assets/webp/mountain.webp";
-import tree from "../assets/webp/tree.webp";
+import tree from "../assets/SVG/greentree.png";
+
+import interactives from "../assets/SVG/interactives.png";
+import jingles from "../assets/SVG/jingles.png";
+import stories from "../assets/SVG/stories.png";
+
+
+
+
 import treebottomgrass from "../assets/webp/treebottomgrass.webp";
 import boat from "../assets/SVG/boat.svg"
 import wood from "../assets/webp/throne.webp"
@@ -21,6 +29,7 @@ import patchright from "../assets/webp/patch_right.webp";
 import patchleft from "../assets/webp/patch_left.webp";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
  
 export default function TopSec() {
   const fullText = `
@@ -40,6 +49,7 @@ export default function TopSec() {
   const closeLion = () => setLionOpen(false)
   const openEle = () => { setLionOpen(false); setEleOpen(true) }
   const closeEle = () => setEleOpen(false)
+   const navigate= useNavigate()
 
   // ESC key handler for either modal
   useEffect(() => {
@@ -48,17 +58,28 @@ export default function TopSec() {
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [lionOpen, eleOpen])
+  
   return (
     <>
     <Navbar />
     <div className={styles.topSection}>
-      <div className={styles.treeContainer}>
+      <div className={styles.treeContainer}>              
         <img src={tree} alt="Tree" className={styles.tree} />
 
         <div className={styles.treeLinks}>
-          <a href="/jingles" className={styles.jingles}>Jingles</a>
-          <a href="/interactives" style={{ fontSize: '2rem' }} className={styles.interactive}>Interactives</a>
-          <a href="/stories" className={styles.stories}>Stories</a>
+          <a href="/jingles" className={styles.jingles}>
+          <img src={jingles} alt="" srcset="" />
+          <h3>jingles</h3>
+          </a>
+          <a href="/interactives" style={{ fontSize: '2rem' }} className={styles.interactive}>
+          <img src={interactives} alt="" srcset="" />
+           <h3>interactives</h3>
+          </a>
+          <a href="/stories" className={styles.stories}>
+          <img src={stories} alt="" srcset="" />
+           <h3>stories</h3>
+
+          </a>
         </div>
         <img src={treebottomgrass} alt="treebottomgrass" className={styles.treebottomgrass} />
       </div>
@@ -68,7 +89,7 @@ export default function TopSec() {
         <div className={styles.boardContainer}>
           <img src={board} alt="board" className={styles.board} />
           <div className={styles.boardText}>
-            <p>For Kids' Joy and Parents' Peace of Mind</p>
+            <h1>For Kids' Joy <br/> and Parents'<br/> Peace of Mind</h1>
           </div>
         </div>
       </div>
@@ -78,7 +99,7 @@ export default function TopSec() {
           <div className={styles.boatWrapper}>
             <img src={boat} alt="Boat" className={styles.boat} />
 
-            <button className={styles.boatBtn}>
+            <button className={styles.boatBtn } onClick={() => navigate('/about')}>
               Click Me
             </button>
           </div>
@@ -92,16 +113,19 @@ export default function TopSec() {
             <img src={cave} alt="cave" className={styles.cave} />
             <div className={styles.caveText}>
 
-              <svg width="100%" height="250" viewBox="0 0 1000 300">
+              
+
+              <svg width="100%" height="250" viewBox="0 0 1000 300">  
                 <defs>
                   <path id="curve1" d="M 50 350 Q 500 -100 950 350" />
                 </defs>
                 <text className={styles.para1SVG}>
-                  <textPath href="#curve1" startOffset="50%" textAnchor="middle">
+                  <textPath href="#curve2" startOffset="50%" textAnchor="middle">
                     Say Hi to our Cuties
                   </textPath>
                 </text>
               </svg>
+              
             </div>
             <div className={styles.caveText2}>
               <svg width="100%" height="250" viewBox="0 0 1000 300">

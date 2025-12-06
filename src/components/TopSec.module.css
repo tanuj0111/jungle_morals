@@ -1,70 +1,50 @@
 * {
   box-sizing: border-box;
-  /* margin: 0;
-  padding: 0; */
 }
 
 html,
 body {
- overflow-x: hidden !important;
-   height: 100vh;
-}
-.homeContainer {
-  padding: 0;
+  overflow-x: hidden !important;
+  height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 
 .grassContainer {
   background-image: url('../assets/webp/bggrass.webp');
   background-size: cover;
-  /* background-repeat: no-repeat; */
-  /* background-position: bottom center; */
-  top: 449px !important;
-  height:auto;
-  min-height: 290vh;
+  top: 29.5vw !important;
+  height: auto;
+  min-height: 250vh;
   position: relative;
-  /* margin-left: ; */
-  position: relative;
-  /* background-color: transparent; */
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 .topSection {
   position: relative;
+  /* top:-30rem */
 }
-
-/* .treeContainer {
-  position: relative;
-} */
 
 .treebottomgrass {
   position: absolute;
-  left: -9px;
+  left: -0.5vw;
   width: 140%;
-  /* height: auto; */
-  margin-top:380px;
+  margin-top: 25vw;
   z-index: 10;
 }
 
-/* .tree {
-  position: absolute;
-  left: 8px;
-  top: -303px;
-  width: 38%;
-  z-index: 8;
-} */
 .treeContainer {
   position: relative;
-  width: 38%;    
+  width: 38%;
 }
 
 .tree {
   width: 90%;
   position: absolute;
-  top: -130px;
-  margin-left: 140px;
+  top: -8.5vw;
+  margin-left: 9.2vw;
   z-index: 11;
 }
 
@@ -79,93 +59,128 @@ body {
 
 .treeLinks a {
   position: absolute;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #065d11;
   text-decoration: none;
   cursor: pointer;
   pointer-events: auto;
+  display: block;
+}
+
+.treeLinks a img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .jingles {
-  position: relative;
-  margin-top:150px;
-  margin-left: 180px;
+  position: absolute;
+  top: 7vw;
+  left: 9.8vw;
+  width: 12.9vw;
+  z-index: 20;
+}
+
+.jingles h3{
+   position: absolute;
+  top: 3vw;
+  left: 2.8vw;
+  font-size: 2.48vw;
+  color: #0f766e;
+  width: 12.9vw;
   z-index: 20;
 }
 
 .interactive {
-  position: relative; 
-  margin-top: 140px;
-  margin-left: 440px;
+  position: absolute;
+  top: 6.2vw;
+  left: 27.4vw;
+  width: 15vw;
   z-index: 20;
 }
 
+.interactive h3{
+   position: absolute;
+  top: 3vw;
+  left: 1.5vw;
+  font-size: 2.38vw;
+  color: #0f766e;
+  width: 12.9vw;
+  z-index: 20;
+}
 
 .stories {
-  position: relative;
-  margin-top: 300px;
-  margin-left: 430px;
+  position: absolute;
+  top: 18.7vw;
+  left: 27.5vw;
+  width: 10.5vw;
+  z-index: 20;
+}
+
+.stories h3{
+   position: absolute;
+  top: 1.4vw;
+  left: 1.5vw;
+  font-size: 2.38vw;
+  color: #0f766e;
+  width: 12.9vw;
   z-index: 20;
 }
 
 .mountainContainer {
   position: relative;
-
 }
 
 .mountain {
   position: absolute;
-  top: -340px;
+  top: -22.3vw;
   width: 90%;
-  height: 900px;
-  left:23vh;
+  height: 59vw;
+  left: 15vw;
   z-index: 2;
 }
 
 .boardContainer {
   position: absolute;
-  top: 23px;
-  left: 10vh;
-  transform: translate(-50%, -50%);
+  top: 4.7vw;
+  right: 2.5vw;
   z-index: 6;
 }
 
 .board {
-  width: 420px;
-  height: 350px;
-  margin-top: 23rem;
-  margin-left: 2304px;
+  width: 24.8vw;
+  height: auto;
 }
 
 .boardText {
   position: absolute;
-  top: 510px;
-  left: 88%;
-  margin-left: 50px;
-  transform: translate(-19%, -50%);
+  top: 40%;
+  left: 52%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-size: 2rem;
+  font-size: 1.48vw;
   font-weight: bold;
   text-align: center;
   line-height: 1.1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 80%;
+}
+
+.boardText h1{
+    font-size: 1.78vw;
 }
 
 .riverContainer {
   position: relative;
-  top:-23px;
-  left: 460px;
+  top: -1.5vw;
+  left: 30.2vw;
 }
 
 .river {
   position: absolute;
   width: 90%;
-  top:65px;
-  left:-650px;
+  top: 4.3vw;
+  left: -42.6vw;
   z-index: 2;
 }
-
 
 .flowerCaveSection {
   position: absolute;
@@ -179,27 +194,27 @@ body {
 }
 
 .flowers {
-  height: 190px;
-  /* width: 30px; */
+  height: 12.5vw;
   position: relative;
   z-index: 4;
-  margin-top: 110px;
-  margin-left: 88vh;
-  width:50%;
-
+  margin-top: 7.2vw;
+  margin-left: 57.7vw;
+  width: 50%;
 }
+
 .patchleft {
   position: absolute;
   width: 33%;
-  left: 780px;
-  top: 360px;
+  left: 51.2vw;
+  top: 23.6vw;
   z-index: 5;
 }
+
 .patchright {
   position: absolute;
   width: 33%;
-  left: 7px;
-  top: 350px;
+  left: 0.5vw;
+  top: 23vw;
   z-index: 5;
 }
 
@@ -217,9 +232,7 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
-
 }
-
 
 .caveText {
   position: absolute;
@@ -228,7 +241,7 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  color: #004b23;
+  color: #0f766e;
 }
 
 .caveText2 {
@@ -238,21 +251,20 @@ body {
   transform: translate(-50%, -50%);
   width: 90%;
   text-align: center;
-  color: #004b23;
+  color: #0f766e;
 }
 
 .para1SVG {
-  font-size: 4rem;
+  font-size: 4.6vw;
   font-weight: bold;
-  fill: #004b23;
+  fill: #0f766e;
 }
 
 .para2SVG {
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: bold;
   fill: #004b23;
 }
-
 
 .charactersContainer {
   position: absolute;
@@ -274,32 +286,30 @@ body {
 .wood {
   width: 72%;
   position: relative;
-  margin-bottom: -800px;
-  left: 50px;
+  margin-bottom: -52.5vw;
+  left: 3.3vw;
   z-index: 1;
 }
 
 .tiger {
   width: 50%;
-  position:  relative;
-  margin-bottom: -990px  ;
+  position: relative;
+  margin-bottom: -65vw;
   left: 20%;
   z-index: 2;
-
 }
 
 .tigerPaw {
   position: absolute;
-  width: 30px;
-  padding-top: 650px;
-  margin-bottom: 300px;
-  margin-left: 110px;
-  z-index: 3002; /* ensure above nearby graphics */
+  width: 2vw;
+  padding-top: 42.6vw;
+  margin-bottom: 19.7vw;
+  margin-left: 7.2vw;
+  z-index: 3002;
   cursor: pointer;
   pointer-events: auto;
 }
 
-/* Centered modal + backdrop for lionboard */
 .backdropLayer {
   position: fixed;
   inset: 0;
@@ -336,25 +346,25 @@ body {
 .table {
   width: 75%;
   position: relative;
-  bottom: -460px;
-  right: -300px;
+  bottom: -30.2vw;
+  right: -19.7vw;
   z-index: 1;
 }
 
 .elphe {
   width: 65%;
   position: absolute;
-  bottom: -680px;
+  bottom: -44.6vw;
   right: -1%;
   z-index: 2;
 }
 
 .elphepaw {
   position: relative;
-  width: 35px;
-  margin-bottom: -1200px;
+  width: 2.3vw;
+  margin-bottom: -78.8vw;
   margin-left: -37%;
-  z-index: 3002; /* elevate above overlapping art */
+  z-index: 3002;
   cursor: pointer;
   pointer-events: auto;
 }
@@ -362,11 +372,10 @@ body {
 .boatWrapper {
   position: absolute;
   width: 70%;
-  top: 180px;
-  margin-left:1vh;
+  top: 11.8vw;
+  margin-left: 0.66vw;
   transform: translateX(-50%);
   z-index: 90;
-  /* Allow clicks to pass through wrapper except for its button */
   pointer-events: none;
 }
 
@@ -381,25 +390,23 @@ body {
   left: 80.7%;
   transform: translate(-50%, -50%);
   background: inherit;
-  color: green;
+  color: #0f766e;
   border: none;
-  padding: 15px 30px;
-  font-size: 2.1rem;
+  padding: 1vw 2vw;
+  font-size: 1.4vw;
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 0.8vw;
   cursor: pointer;
   z-index: 200;
-  /* Re-enable interactions on the button specifically */
   pointer-events: auto;
 }
 
-.aboutUsSection {
+/* .aboutUsSection {
   position: absolute;
   margin-top: -35%;
-  margin-right:10px;
+  margin-right: 0.66vw;
   z-index: 10;
 }
-
 
 .aboutUsImageWrapper {
   position: relative;
@@ -420,12 +427,10 @@ body {
   top: 50%;
   left: 50%;
   margin-left: 20%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   width: 47%;
   padding: 2rem 2rem 1rem 2rem;
   background: transparent;
-  /* font-size: 1rem; */
-  /* color: #222; */
   line-height: 1.7;
   word-wrap: break-word;
   text-align: center;
@@ -433,51 +438,119 @@ body {
   border-radius: 1rem;
   box-sizing: border-box;
   z-index: 2;
-  /* cursor: default; */
   text-decoration: none;
 }
 
 .aboutUsContent h2 {
-  font-size: 2rem;
+  font-size: 3.3vw;
   color: #2fa43e;
-  margin-bottom:-10px;
-  margin-left: -25px;
-  margin-top:1px;
+  margin-bottom: -0.66vw;
+  margin-left: -1.6vw;
+  margin-top: 0.066vw;
   font-weight: bold;
 }
 
 .aboutText {
-  font-size: 1.6rem;
+  font-size: 1.05vw;
   color: black;
   line-height: 1.8;
   word-wrap: break-word;
-  /* display: inline; */
   text-align: left;
-  /* margin-left: 250px ; */
-  margin-right: 120px;
-  margin-bottom: 210px;
-  
+  margin-left: 16.4vw;
+  margin-right: 7.9vw;
+  margin-bottom: 13.8vw;
 }
 
 .readMore {
   position: absolute;
-  font-size: 1.4rem;
+  font-size: 0.92vw;
   font-weight: bold;
   cursor: pointer;
   color: #2fa43e;
-  margin-top: -15.8rem;
-  margin-left: -340px;
-  
+  margin-top: -10.4vw;
+  margin-left: -22.3vw;
+} */
+
+
+
+.aboutUsSection {
+  position: absolute;
+  top: 108vw;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
-/* Responsive Media Queries */
-/* Extra small devices (portrait phones, less than 576px) */
+
+.aboutUsImageWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5vw;
+  /* z-index: 10; */
+}
+
+.aboutUsImage {
+  width: 50vw;
+  display: block;
+  z-index: 1;
+}
+
+.aboutUsContent {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 31vw;
+  padding: 1.3vw;
+  background: transparent;
+  line-height: 1.7;
+  word-wrap: break-word;
+  text-align: center;
+  text-shadow: 1px 1px 8px #fff;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  z-index: 2;
+  text-decoration: none;
+}
+
+.aboutUsContent h2 {
+  font-size: 3.8vw;
+  color: #0f766e;
+  margin-bottom: 0.5vw;
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.aboutText {
+  font-size: 1.35vw;
+  color: black;
+  line-height: 1.6;
+  word-wrap: break-word;
+  text-align: left;
+  margin: 0.5vw 0 2vw 0;
+  padding: 0 1vw;
+}
+
+.readMore {
+  display: inline-block;
+  font-size: 0.92vw;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0f766e;
+  margin-top: -10vw;
+  text-align: center;
+}
+
+
 @media (max-width: 575.98px) {
   .grassContainer {
   background-image: url('../assets/webp/bggrass.webp');
   background-size: cover;
   /* background-repeat: no-repeat; */
   /* background-position: bottom center; */
-  top: -220px !important;
+  /* top: -220px !important; */
   height:auto;
   min-height: 75vh;
   position: relative;
@@ -488,182 +561,33 @@ body {
 
 .topSection {
   position: relative;
-}
-
-/* .treeContainer {
-  position: relative;
-} */
-
-.treebottomgrass {
-  position: absolute;
-  left: -9px;
-  width: 140%;
-  /* height: auto; */
-  margin-top:-280px;
-  z-index: 10;
-}
-
-/* .tree {
-  position: absolute;
-  left: 8px;
-  top: -303px;
-  width: 38%;
-  z-index: 8;
-} */
-.treeContainer {
-  position: relative;
-  width: 43%;    
-}
-
-.tree {
-  width: 100%;
-  position: absolute;
-  top: -450px;
-  margin-left: 20px;
-  z-index: 11;
-}
-
-.treeLinks {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.treeLinks a {
-  position: absolute;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #065d11;
-  text-decoration: none;
-  cursor: pointer;
-  pointer-events: auto;
-}
-
-.jingles {
-  position: relative;
-  margin-top: -44vh;
-  margin-left: 33px;
-  z-index: 20;
-}
-
-.interactive {
-  position: relative; 
- margin-top: -45vh;
-  margin-left: 112px;
-  z-index: 20;
-  font-size: 1rem  !important
-}
-
-
-.stories {
-  position: relative;
- margin-top: -38.3vh;
-  margin-left: 113px;
-  z-index: 20;
-}
-
-.mountainContainer {
-  position: relative;
+  top: -24rem;
 
 }
 
-.mountain {
-  position: absolute;
-  top: -600px;
-  width: 90%;
-  height: 400px;
-  left:45px;
-  z-index: 2;
-}
-
-.boardContainer {
-  position: absolute;
-  top: -2rem;
-  left:10vh;
-  transform: translate(-50%, -50%);
-  z-index: 6;
-}
-
-.board {
-  width: 420px;
-  height: 350px;
-  margin-top: 23rem;
-  margin-left: 2304px;
-}
 
 .boardText {
-  position: absolute;
-  top: 510px;
-  left: 88%;
-  margin-left: 50px;
-  transform: translate(-19%, -50%);
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.1;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+  top: 30%;
+  left: 52%;
+
 }
 
-.riverContainer {
-  position: relative;
-  top:-23px;
-  left: 460px;
-}
-
-.river {
-  position: absolute;
-  width: 110vw;
-  top:-1vh;
-  margin-left: 9.9vh;;
-  z-index: 9;
+.boardText h1{
+    font-size: 1.48vw;
+     position: absolute;
+     margin-top: -25%;
+     margin-left: 25%;
 }
 
 
-.flowerCaveSection {
-  position: absolute;
-  margin-top: -5%;
-  left: 4%;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
 
-.flowers {
-  height: 50px;
-  /* width: 30px; */
-  position: relative;
-  z-index: 4;
-  margin-top: 18px;
-  margin-left: 204px;
-  width:40%;
-
-}
-.patchleft {
-  position: absolute;
-  width: 36%;
-  left: 27vh;
-  top: 9vh;
-  z-index: 5;
-}
-.patchright {
-  position: absolute;
-  width: 32%;
-  left:-2vh;
-  top: 9.4vh;
-  z-index: 5;
-}
 
 .caveContainer {
   position: absolute;
-  margin-top: 2vh;
-  margin-left: -13vh;
-  width: 70%;
+  margin-top: 13%;
+  margin-left: -27%;
+  width: 55%;
   text-align: center;
   z-index: 10;
 }
@@ -673,9 +597,7 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
-
 }
-
 
 .caveText {
   position: absolute;
@@ -684,7 +606,7 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  color: #004b23;
+  color: #0f766e;
 }
 
 .caveText2 {
@@ -694,202 +616,116 @@ body {
   transform: translate(-50%, -50%);
   width: 90%;
   text-align: center;
-  color: #004b23;
+  color: #0f766e;
 }
 
 .para1SVG {
-  font-size: 4.8rem;
+  font-size: 4.6vw;
   font-weight: bold;
-  fill: #004b23;
+  fill: #0f766e;
 }
 
 .para2SVG {
-  font-size: 2.4rem;
+  font-size: 2vw;
   font-weight: bold;
-  fill: #004b23;
+  fill: #0f766e;
 }
 
-
-.charactersContainer {
+.boardText {
   position: absolute;
-  top: 5%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  z-index: 20;
+     
 }
 
-.leftGroup {
-  position: relative;
-  width: 40%;
-}
 
-.wood {
-  width: 72%;
-  position: relative;
-  margin-bottom: -20vh;
-  left: 3px;
-  z-index: 1;
-}
-
-.tiger {
-  width: 60%;
-  position:relative;
-  top: -47vh;
-  left: 1.4vh;
-  z-index: 2;
-
-}
-
-.tigerPaw {
+.aboutUsContent {
   position: absolute;
-  width: 10px;
-  padding-top: 20vh;
-  margin-left: 1.4vh;
-  z-index: 3;
+  top: 40%;
+  left: 70%;
+  
 }
 
-.rightGroup {
-  position: relative;
-  width: 40%;
+
+.readMore {
+ 
+  /* font-size: 0.92vw;  */
+  margin-top: -3.5vw;
+  position: absolute;
+  left: 7vh;
+
 }
 
 .table {
-  width: 75%;
   position: relative;
-  bottom: -460px;
-  right: -300px;
-  z-index: 1;
+  bottom: -28.2vw;
+  right: -19.7vw;
+ 
 }
 
 .elphe {
-  width: 71%;
   position: absolute;
-  bottom: -17.6vh;
-  right: -2.3vh;
-  z-index: 2;
+  bottom: -42.6vw;
+  right: -1%;
 }
 
 .elphepaw {
   position: relative;
-  width: 12px;
-  margin-bottom:-28.5vh;
-  margin-left: -5.5vh;
-  z-index: 3;
+  width: 2.3vw;
+  margin-bottom: -73.8vw;
+  margin-left: -37%;
+ 
 }
 
-.boatWrapper {
-  position: absolute;
-  width: 70%;
-  top: -10vh;
-  margin-left:10vh;
-  transform: translateX(-50%);
-  z-index: 900;
+.para1SVG {
+  font-size: 66.6px !important;
+ 
 }
 
-.boat {
-  width: 100%;
-  display: block;
+.para2SVG {
+  font-size: 32px !important;
+  
+  
 }
 
-.boatBtn {
-  position: absolute;
-  top: 61.5%;
-  left: 80.7%;
-  transform: translate(-50%, -50%);
-  background: inherit;
-  color: green;
-  border: none;
-  padding: 15px 30px;
-  font-size: 2.1rem;
-  font-weight: bold;
-  border-radius: 12px;
-  cursor: pointer;
-  z-index: 200;
 }
 
-.aboutUsSection {
-  position: absolute;
-  margin-top: -65vh;
-  /* margin-right:0vh; */
-  z-index: 10;
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.para1SVG {
+  font-size: 66px;
 }
 
-
-.aboutUsImageWrapper {
-  position: relative;
-  width: 120%;
-  overflow: hidden;
-  z-index: 10;
+.para2SVG {
+  font-size: 30px;
 }
 
-.aboutUsImage {
-  width: 65%;
-  display: block;
-  margin-left:15vh;
-  z-index: -50;
-}
-
-.aboutUsContent {
-  position: absolute;
-  top: 20%;
+.charactersContainer {
+  
+  top: -1%;
   left: 50%;
-  margin-left: 20%;
-  transform: translate(-50%, -50%); 
-  width: 17%;
-  padding: 2rem 2rem 1rem 2rem;
-  background: transparent;
-  /* background-color: black; */
-  /* font-size: 1rem; */
-  /* color: #222; */
-  line-height: 0.8;
-  word-wrap: break-word;
-  text-align: center;
-  text-shadow: 1px 1px 8px #fff;
-  border-radius: 1rem;
-  box-sizing: border-box;
-  z-index: 2;
-  /* cursor: default; */
-  text-decoration: none;
+ 
 }
 
-.aboutUsContent h2 {
-  /* position: relative; */
-  font-size: 1rem;
-  color: #2fa43e;
-  margin-bottom:1vh;
-  margin-left: -11vh;
-  margin-top:21rem;
-  font-weight: bold;
+
 }
 
-.aboutText {
-  position: relative;
-  font-size: 0.8rem;
-  color: black;
-  line-height: 0.9;
-  word-wrap: break-word;
-  display: grid;
-  /* display: inline; */
-  text-align: left;
-  margin-left: -16vh ;
-  margin-right: 1vh;
-  margin-bottom: 32vh;
+
+@media (max-width: 767px) {
+
+  .para1SVG {
+  font-size: 70px;
+}
+
+.para2SVG {
+  font-size: 30px;
+}
+
+.charactersContainer {
+  
+  top: 1%;
+  left: 50%;
+ 
+}
   
 }
-
-.readMore {
-  position: absolute;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  color: #2fa43e;
-  margin-top: -33vh;
-  margin-left: -10vh;
-  
-}
-}
-
